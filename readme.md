@@ -1,3 +1,14 @@
+## Mofinn is changed from EverBox
+Thanks to moyu for his hard work.I like EverBox very much so I decide to develop it.
+
+## Mofinn Changelog
+
+#### 2015/06/07 - v1.0 PROA1
+- Fixed the header and change it's opacity.
+- Delete changelog.txt because changes will be written in here in the future.
+
+</br>
+
 ## EverBox
 Contributors: moyu  
 Tags: black, green, gray, white, dark, light, two-columns, right-sidebar, fixed-layout, responsive-layout, custom-colors, custom-menu, featured-images, threaded-comments, translation-ready  
