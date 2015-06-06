@@ -1,0 +1,415 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: EverBox\n"
+"POT-Creation-Date: 2015-04-28 13:27+0800\n"
+"PO-Revision-Date: 2015-04-28 13:27+0800\n"
+"Last-Translator: moyu <moyuboy@gmail.com>\n"
+"Language-Team: moyu <moyuboy@gmail.com>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.7.5\n"
+"X-Poedit-Basepath: ../\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: _e;__;_n;_x;esc_attr__\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+"X-Poedit-SearchPathExcluded-1: inc/eof\n"
+
+#: 404.php:14
+msgid "Oops! That page can&rsquo;t be found."
+msgstr "Oops! 无法找到此页面。"
+
+#: 404.php:19
+msgid ""
+"It looks like nothing was found at this location. Maybe try one of the links "
+"below or a search?"
+msgstr "此链接地址无任何内容。尝试使用搜索功能？"
+
+#: comments.php:24
+msgid "No Comments"
+msgstr "暂无评论"
+
+#: comments.php:24 inc/template-tags.php:126 inc/template-tags.php:128
+msgid "1 Comment"
+msgstr "1 条评论"
+
+#: comments.php:24 inc/template-tags.php:126 inc/template-tags.php:128
+msgid "% Comments"
+msgstr "% 条评论"
+
+#: comments.php:37
+msgid "&larr; Older Comments"
+msgstr "&larr; 较旧的评论"
+
+#: comments.php:38
+msgid "Newer Comments &rarr;"
+msgstr "较新的评论 &rarr;"
+
+#: comments.php:48
+msgid "Comments are closed."
+msgstr "评论功能已关闭."
+
+#: content-none.php:13
+msgid "Nothing Found"
+msgstr "未找到任何内容"
+
+#: content-none.php:20
+#, php-format
+msgid "Ready to publish your first post? <a href=\"%s\">Get started here</a>."
+msgstr "准备好发布第一篇文章了？<a href=\"%s\">点击这里开始</a>。"
+
+#: content-none.php:24
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr "(＞﹏＜) 对不起，没有找到与您搜索匹配的项。请尝试不同的关键词。"
+
+#: content-none.php:29
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr "看来我们不能找到你要找的东西。也许搜索可以提供帮助。"
+
+#: content.php:27
+msgid "Sticky"
+msgstr "顶置"
+
+#: header.php:71
+msgid "Search.."
+msgstr "搜索..."
+
+#: inc/customizer.php:17
+msgid "General"
+msgstr "通用"
+
+#: inc/customizer.php:34
+msgid "Primary Color"
+msgstr "主色调"
+
+#: inc/customizer.php:54
+msgid "Post excerpt length"
+msgstr "文章摘要长度"
+
+#: inc/customizer.php:75
+msgid "Show cagetory link"
+msgstr "显示文章分类链接"
+
+#: inc/customizer.php:96
+msgid "Infinite Pagination with jetpack"
+msgstr "文章自动加载"
+
+#: inc/customizer.php:117
+msgid "Footer Credit"
+msgstr "页脚版权信息"
+
+#: inc/customizer.php:126
+msgid "ICONS"
+msgstr "图标"
+
+#: inc/customizer.php:143
+msgid "LOGO"
+msgstr ""
+
+#: inc/customizer.php:163
+msgid "Favicon"
+msgstr ""
+
+#: inc/customizer.php:183
+msgid "iPhone Retina icon (sizes:120x120)"
+msgstr "iPhone桌面图标(大小120x120)"
+
+#: inc/extras.php:22
+msgid "Read More  &raquo;"
+msgstr "阅读全文 &raquo;"
+
+#: inc/extras.php:68
+msgid "Author"
+msgstr "作者"
+
+#: inc/extras.php:76
+msgid "Your comment is awaiting approval."
+msgstr "你的评论正在等待审核."
+
+#: inc/extras.php:107
+msgid "Sorry, you have not set any menus."
+msgstr "抱歉, 你还没有设置任何菜单."
+
+#: inc/template-tags.php:23
+msgid "Posts navigation"
+msgstr "分页"
+
+#: inc/template-tags.php:27
+msgid "Older posts"
+msgstr "更早的文章"
+
+#: inc/template-tags.php:31
+msgid "Newer posts"
+msgstr "最新的文章"
+
+#: inc/template-tags.php:56
+msgid "Post navigation"
+msgstr "文章分页"
+
+#: inc/template-tags.php:81
+#, php-format
+msgid "View all posts in %s"
+msgstr "查看 %s 的所有文章"
+
+#: inc/template-tags.php:126
+msgid "No Comment"
+msgstr "暂无评论"
+
+#: inc/template-tags.php:128
+msgid "Leave a comment"
+msgstr "发表评论"
+
+#: inc/template-tags.php:144
+#, php-format
+msgid "Tagged: %1$s"
+msgstr "标签: %1$s"
+
+#: inc/template-tags.php:186
+msgid ""
+"This content is password protected. To view it please enter your password "
+"below:"
+msgstr "这是一篇受密码保护的文章,请输入密码查看."
+
+#: inc/template-tags.php:188
+msgid "Password:"
+msgstr "密码："
+
+#: inc/template-tags.php:190
+msgid "Submit"
+msgstr "提交"
+
+#: inc/theme-setup.php:50
+msgid "Primary Menu"
+msgstr "网站主导航"
+
+#: inc/theme-setup.php:51
+msgid "Sidebar Menu"
+msgstr "侧边栏页脚导航"
+
+#: inc/theme-setup.php:74
+msgid "Sidebar"
+msgstr "侧边栏"
+
+#: inc/theme-setup.php:76
+msgid "Default sidebar."
+msgstr "默认侧边栏"
+
+#: inc/theme-setup.php:83
+msgid "Post Sidebar"
+msgstr "文章页面侧边栏"
+
+#: inc/theme-setup.php:85
+msgid "Sidebar replace default sidebar for single post & page."
+msgstr "在文章与页面调用的侧边栏"
+
+#: inc/widgets/class-popular-widget.php:11
+msgid "EverBox - Tab Posts"
+msgstr "EverBox - 分栏文章"
+
+#: inc/widgets/class-popular-widget.php:12
+msgid "A tab widget that contain popular posts list and latest posts list."
+msgstr "显示两栏热门文章及最新文章列表"
+
+#: inc/widgets/class-popular-widget.php:29
+#: inc/widgets/class-popular-widget.php:152
+msgid "Popular"
+msgstr "热门文章"
+
+#: inc/widgets/class-popular-widget.php:30
+#: inc/widgets/class-popular-widget.php:153
+msgid "Latest"
+msgstr "最新更新"
+
+#: inc/widgets/class-popular-widget.php:86
+#: inc/widgets/class-popular-widget.php:123
+msgid " ago"
+msgstr "前"
+
+#: inc/widgets/class-popular-widget.php:89
+#, php-format
+msgid "%s Comments"
+msgstr "%s 条评论"
+
+#: inc/widgets/class-popular-widget.php:96
+#: inc/widgets/class-popular-widget.php:131
+msgid "No Posts"
+msgstr "暂无文章"
+
+#: inc/widgets/class-popular-widget.php:159
+msgid "Popular tab title:"
+msgstr "热门文章列表标题"
+
+#: inc/widgets/class-popular-widget.php:163
+msgid "Range:"
+msgstr "时间"
+
+#: inc/widgets/class-popular-widget.php:166
+msgid "Last 1 days"
+msgstr "最近一天"
+
+#: inc/widgets/class-popular-widget.php:167
+msgid "Last 7 days"
+msgstr "最近七天"
+
+#: inc/widgets/class-popular-widget.php:168
+msgid "Last 30 days"
+msgstr "最近一个月"
+
+#: inc/widgets/class-popular-widget.php:173
+msgid "Latest tab title:"
+msgstr "最新文章列表标题："
+
+#: inc/widgets/class-popular-widget.php:177
+msgid "Posts num:"
+msgstr "文章显示数量："
+
+#: inc/widgets/class-popular-widget.php:179
+msgid "how many posts you want to show for both popular tab and latest tab."
+msgstr "热门文章列表与最近更新文章列表默认文章显示的数量"
+
+#: search.php:16
+#, php-format
+msgid "Search Results for: %s"
+msgstr "%s 的搜索结果"
+
+#: searchform.php:6
+msgid "Go"
+msgstr "提交"
+
+#~ msgid "Order By:"
+#~ msgstr "排序方式："
+
+#~ msgid "Comments"
+#~ msgstr "评论数量"
+
+#~ msgid "A tab widget that contain popular posts list and latest psots list."
+#~ msgstr "显示最近文章及热门文章列表"
+
+#~ msgid "Page %s"
+#~ msgstr "第 %s 页"
+
+#~ msgid "Tagged %1$s"
+#~ msgstr "标签 %1$s"
+
+#~ msgid "Site favicon icon."
+#~ msgstr "网站图标"
+
+#~ msgid "Loop"
+#~ msgstr "文章列表"
+
+#~ msgid "Category"
+#~ msgstr "分类"
+
+#~ msgid "Show post category links?"
+#~ msgstr "显示文章分类链接?"
+
+#~ msgid "Post Excerpt Length"
+#~ msgstr "文章摘要长度"
+
+#~ msgid "The default post excerpt length."
+#~ msgstr "文章列表页面默认的摘要长度"
+
+#~ msgid "Pagination"
+#~ msgstr "分页"
+
+#~ msgid "Infinite Pagination"
+#~ msgstr "自动加载"
+
+#~ msgid ""
+#~ "You must install and active <a href=\"http://jetpack.me/\" target=\"_blank"
+#~ "\">jetpack</a> plugin first, otherwise this function does not work."
+#~ msgstr ""
+#~ "你必须首先安装并启用 <a href=\"http://jetpack.me/\" target=\"_blank"
+#~ "\">jetpack</a>插件，然后才能使用此功能。"
+
+#~ msgid "Icons"
+#~ msgstr "图标"
+
+#~ msgid "Misc"
+#~ msgstr "杂项"
+
+#~ msgid "Tracking Code"
+#~ msgstr "追踪代码"
+
+#~ msgid "Extensions"
+#~ msgstr "扩展"
+
+#~ msgid "Disable Google fonts"
+#~ msgstr "关闭Google字体"
+
+#~ msgid ""
+#~ "Disable enqueuing of Open Sans and other fonts used by WordPress from "
+#~ "Google."
+#~ msgstr "关闭WordPress默认调用的Google字体，以便加快网站访问速度。"
+
+#~ msgid ""
+#~ "If you have actived WordPress SEO by Yoast, Easy SEO would be disabled by "
+#~ "default."
+#~ msgstr ""
+#~ "如果你启用了WordPress SEO by Yoast插件，那么此内置SEO功能会默认关闭的。"
+
+#~ msgid "Use post tags as Meta Keywords."
+#~ msgstr "使用文章标签作为Meta关键字"
+
+#~ msgid "Use post excerpt as Meta Description."
+#~ msgstr "使用文章摘要作为Meta描述"
+
+#~ msgid "Front Page Meta Keywords"
+#~ msgstr "首页的Meta关键字"
+
+#~ msgid ""
+#~ "You can enter your own Meta Keywords for front page instead of using post "
+#~ "tags."
+#~ msgstr "你可以单独为首页设置Meta关键字，而不是使用文章标签"
+
+#~ msgid "Front Page Description"
+#~ msgstr "首页Meta描述"
+
+#~ msgid "The description of your site."
+#~ msgstr "你可以单独为首页设置Meta描述，而不是使用文章摘要"
+
+#~ msgid "Donate"
+#~ msgstr "捐助"
+
+#~ msgid "Theme Settings"
+#~ msgstr "主题设置"
+
+#~ msgid ""
+#~ "If you like this theme and find it useful, help keep this theme free and "
+#~ "actively developed by clicking the donate button. Also, don't forget to "
+#~ "follow me on Twitter."
+#~ msgstr ""
+#~ "如果你觉得我们的主题不错, 那么点击下面的Paypal捐赠按钮给我们任意金额的捐赠"
+#~ "吧。"
+
+#~ msgid "Mobile Menu"
+#~ msgstr "手机导航"
+
+#~ msgid "Your comment is awaiting pending."
+#~ msgstr "你的评论正在等待审核中."
+
+#~ msgid "Custom"
+#~ msgstr "自定义"
+
+#~ msgid "Custom CSS"
+#~ msgstr "自定义CSS"
+
+#~ msgid "Add your own custom css to change the apperance of this theme."
+#~ msgstr "添加自定义CSS样式，以便替换默认样式。"
+
+#~ msgid "Code before <code>&lt;/head&gt;</code> tag."
+#~ msgstr "在<code>&lt;/head&gt;</code>标签前插入的代码"
+
+#~ msgid "Code before <code>&lt;/body&gt;</code> tag."
+#~ msgstr "在<code>&lt;/body&gt;</code>标签前插入的代码"
+
+#~ msgid ""
+#~ "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+#~ msgstr "准备好发布第一篇文章了？<a href=\"%1$s\">点击这里开始</a>。"

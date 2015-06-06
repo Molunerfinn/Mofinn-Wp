@@ -1,0 +1,24 @@
+/** ––––––––––––––––––––
+ * Alert
+ */
+ .alert {
+	padding: 15px;
+	margin-bottom: 20px;
+	border: 1px solid transparent;
+	@extend .alert_radius;
+ 	&.alert-danger {
+
+ 	}
+ 	&.alert-success {
+
+ 	}
+ 	&.alert-warning {
+		background-color: #fcf8e3;
+		border-color: #faebcc;
+		color: #8a6d3b;
+ 	}
+ 	&.alert-info {
+
+ 	}
+
+ }

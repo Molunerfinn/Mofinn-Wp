@@ -1,0 +1,61 @@
+/* NOTE
+html is set to 62.5% so that all the REM measurements throughout Skeleton
+are based on 10px sizing. So basically 1.5rem = 15px :) */
+html {
+  font-size: 62.5%; 
+}
+body {
+  	font-size: 1.4rem;
+  	line-height: 1.6;
+  	font-weight: 400;
+  	font-family: Helvetica, Arial, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+  	color: $body_text_color;
+}
+
+b, strong {
+	font-weight: bold;
+}
+
+p {
+  margin-bottom: 1.5rem;
+}
+
+blockquote {
+  	padding: 1rem 2rem;
+  	border-left: .5rem solid #eee;
+  	font-size: 1.6rem;
+  	margin: 1rem 0;
+	&.pullquote {
+		max-width: 300px;
+		margin-top: 0;
+		&.alignright {
+			margin-right:0;
+		}
+	}
+  	p {
+    	margin: 0;
+  	}
+  	footer {
+    	font-size: 80%;
+    	color: #777;
+	    line-height: 1.42857143;
+  	}
+}
+
+hr {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  border-width: 0;
+  border-top: 1px solid #E1E1E1;
+}
+.highlight {
+  padding-left: .3rem;
+  padding-right: .3rem;
+  background: #FFF198;
+  color: #373737;
+}
+pre > code {
+  display: block;
+  padding: 1rem 1.5rem;
+  white-space: pre; 
+}

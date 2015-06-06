@@ -1,0 +1,49 @@
+Theme : EverBox
+Version : 1.1.6
+Author : moyu - http://www.20theme.com
+
+2015/04/29 - 1.1.6
+===========================================================  
+- Fix some security bugs
+
+2015/04/28 - 1.1.5 
+===========================================================  
+- Fix some security bugs
+
+2015/04/27 - 1.1.4 
+===========================================================  
+- Fix security and privacy bugs
+
+2015/04/22 - 1.1.3  
+===========================================================  
+- Convert optioins framework to the Customize API
+- Remove SEO functions which is considered plugin territory
+- Upgrade the screenshot
+- Fix long menus break out of the header bug
+- Fix some other bugs
+  
+2015/04/04 - 1.1.2  
+===========================================================  
+- Fix theme setting panel language not load bug
+  
+2015/04/04 - 1.1.1  
+===========================================================  
+- Fix post title not show properly bug
+  
+2015/04/04 - 1.1.0  
+===========================================================  
+- Header redesign
+- Fix some bugs
+- Remove Superfish jQuery Plugin
+  
+2015/03/25 - 1.0.2  
+===========================================================  
+- Fix theme settings bug
+  
+2015/03/25 - 1.0.1  
+===========================================================  
+- Fix some bugs
+  
+2015/03/18 - 1.0.0  
+===========================================================  
+- 1.0.0 released  

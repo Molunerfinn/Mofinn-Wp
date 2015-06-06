@@ -1,0 +1,15 @@
+/** ––––––––––––––––––––
+ * Links
+ */
+ a {
+ 	color: $link_color;
+ 	text-decoration: none;
+ 	outline: 0;
+ 	&:hover, 
+ 	&:active, 
+ 	&:focus {
+ 		color: $link_hover_color;
+ 		text-decoration: none;
+ 		outline: 0;
+ 	}
+ }

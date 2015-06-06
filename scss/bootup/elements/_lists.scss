@@ -1,0 +1,43 @@
+ul, 
+ol {
+	margin: 0;
+}
+
+ul {
+	list-style: disc;
+}
+
+ol {
+	list-style: decimal;
+}
+
+li > ul,
+li > ol {
+	margin-bottom: 0;
+	margin-left: 0;
+}
+
+dt {
+	color: #373737;
+	font-weight: bold;
+}
+
+dd {
+	margin: 0 1.5em 1.5em;
+}
+
+/** ––––––––––––––––––––
+ * Lists
+ */
+ul {
+  list-style: disc;
+}
+ol {
+  list-style: decimal;
+}
+ol, 
+ul {
+  	margin-top: 1em;
+	margin-bottom: 1em;
+  	padding: 0 0 0 40px;
+}

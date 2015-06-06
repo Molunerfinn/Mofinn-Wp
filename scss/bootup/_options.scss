@@ -1,0 +1,45 @@
+$border_radius: 0;
+.border_radius {
+	border-radius: $border_radius;
+}
+.input_radius {
+	border-radius: $border_radius;
+}
+.input_border {
+	border: 1px solid #d1d1d1;
+}
+.button_radius {
+	border-radius: $border_radius;
+}
+.alert_radius {
+	border-radius: 3px;
+}
+// Colors
+$primary_color: #4183C4;
+$body_text_color: #555;
+$link_color: #4183C4; //#1EAEDB;
+$link_hover_color: #0FA0CE;
+$border_color: #e5e5e5;
+// Varibles
+.inner-clear {
+	&:before, &:after {
+		content: " ";
+  		display: table;
+	}
+	&:after {
+		clear: both;
+	}
+}
+
+.trans_scale {
+	-webkit-transform: scale(1.2);
+	-moz-transform: scale(1.2);
+	-ms-transform: scale(1.2);
+	-o-transform: scale(1.2);
+	transform: scale(1.2);
+}
+@mixin trans_time($time) {
+	-webkit-transition: all $time ease;
+	-moz-transition: all $time ease;
+	transition: all $time ease;
+}

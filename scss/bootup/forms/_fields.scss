@@ -1,0 +1,211 @@
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="text"],
+input[type="tel"],
+input[type="url"],
+input[type="password"],
+textarea,
+select {
+  padding: 6px 10px; /* The 6px vertically centers text on FF, ignored by Webkit */
+  background-color: #fff;
+  @extend .input_border;
+  @extend .input_radius;
+  box-shadow: none;
+  box-sizing: border-box; 
+}
+/* Removes awkward default styles on some inputs for iOS */
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="text"],
+input[type="tel"],
+input[type="url"],
+input[type="password"],
+textarea {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none; 
+}
+textarea {
+  min-height: 65px;
+  padding-top: 6px;
+  padding-bottom: 6px; 
+}
+input[type="email"]:focus,
+input[type="number"]:focus,
+input[type="search"]:focus,
+input[type="text"]:focus,
+input[type="tel"]:focus,
+input[type="url"]:focus,
+input[type="password"]:focus,
+textarea:focus,
+select:focus {
+  border: 1px solid #33C3F0;
+  outline: 0; 
+}
+label,
+legend {
+  display: block;
+  margin-bottom: .5rem;
+  font-weight: 600; 
+}
+fieldset {
+  padding: 0;
+  border-width: 0; 
+}
+input[type="checkbox"],
+input[type="radio"] {
+  display: inline; 
+}
+label > .label-body {
+  display: inline-block;
+  margin-left: .5rem;
+  font-weight: normal; 
+}
+
+.input-group {
+  position: relative;
+  display: table;
+  border-collapse: separate;
+  margin-bottom: 10px;
+  &.input-group-large {
+    .input-group-addon,
+    .form-control {
+      font-size: 1.6rem;
+      height: 42px;
+      padding: 8px 14px;
+      line-height: 1.3333333;
+    }
+  }
+  &.input-group-small {
+    .input-group-addon,
+    .form-control {
+      font-size: 1.2rem;
+      height: 28px;
+      padding: 4px 8px;
+      line-height: 1.5;
+    }
+  }
+  .input-group-addon {
+    background: #eee;
+    color: #555;
+    padding: 6px 12px;
+    text-align: center;
+    font-size: 1.4rem;
+    line-height: 1;
+    @extend .input_border;
+    @extend .input_radius;
+    input {
+      margin-bottom: 0;
+    }
+    &:first-child {
+      border-right: 0;
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+    &:last-child {
+      border-left: 0;
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+    }
+  }
+  .input-group-btn button,
+  .input-group-btn .btn {
+    @extend .input_radius;
+    margin-top: 0;
+    margin-bottom: 0;
+    &:first-child {
+      margin-right: -1px;
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+    &:last-child {
+      margin-left: -1px;
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+    }
+  }
+}
+.input-group .form-control,
+.input-group-addon,
+.input-group-btn {
+  display: table-cell;
+}
+.input-group .form-control {
+  position: relative;
+  float: left;
+  width: 100%;
+  margin-bottom: 0;
+}
+.input-group-addon,
+.input-group-btn {
+  width: 1%;
+  white-space: nowrap;
+  vertical-align: middle;
+}
+.input-group-btn {
+  position: relative;
+}
+.form-control {
+  display: block;
+  width: 100%;
+  height: 32px;
+  padding: 6px 12px;
+  color: #575757;
+  background-color: #fff;
+  background-image: none;
+  font-size: 1.4rem;
+  line-height: 1.42857143;
+  &.input-lg {
+    font-size: 1.6rem;
+    height: 42px;
+    padding: 8px 14px;
+    line-height: 1.3333333;
+  }
+}
+.checkbox {
+  label {
+    margin-bottom: 0;
+    display: inline-block;
+    font-size: 1.3rem;
+  }
+}
+/* Inline Form */
+.form-inline {
+  .form-group {
+    display: inline-block;
+    vertical-align: middle;
+    margin-bottom: 0;
+  }
+}
+.form-group {
+  margin-bottom: 15px;
+}
+
+// Change the white to any color ;)
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px white inset;
+}
+select {
+    position: relative;
+    border-color: #d3d3d3;
+    border-radius: 2px;
+    height: 28px;
+    background: #f8f8f8 url('images/select_arrow.png') no-repeat !important;
+    background-position: 100% center !important;
+    background-size: 15px 4px !important;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.05);
+    line-height: 28px;
+    padding: 0 20px 0 7px;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+}
+/*Retina graphics!*/
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+	   only screen and (min--moz-device-pixel-ratio: 1.5),
+	   only screen and (min-device-pixel-ratio: 1.5) {
+	select {
+		background-image: url('images/select_arrow@2x.png') !important;
+	}
+}

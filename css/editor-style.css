@@ -1,0 +1,431 @@
+/*
+Theme Name: EverBox
+Description: Used to style the TinyMCE editor.
+*/
+/**
+ * Table of Contents:
+ *
+ * 1.0 - Body
+ * 2.0 - Typography
+ * 3.0 - Elements
+ * 4.0 - Alignment
+ * 5.0 - Caption
+ * 6.0 - Galleries
+ */
+/**
+ * 1.0 Body
+ */
+body {
+  font-size: 14px;
+  line-height: 1.6;
+  font-weight: 400;
+  font-family: Helvetica, Arial, sans-serif;
+  color: #555;
+}
+
+/**
+ * 2.0 Typography
+ */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 15px;
+  margin-bottom: 10px;
+  font-weight: 400;
+  color: #333;
+}
+
+h1 {
+  font-size: 28px;
+  line-height: 1.2;
+}
+
+h2 {
+  font-size: 23px;
+  line-height: 1.25;
+}
+
+h3 {
+  font-size: 20px;
+  line-height: 1.3;
+}
+
+h4 {
+  font-size: 17px;
+  line-height: 1.35;
+}
+
+h5 {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+h6 {
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+h1:first-child,
+h2:first-child,
+h3:first-child,
+h4:first-child,
+h5:first-child,
+h6:first-child {
+  margin-top: 0;
+}
+
+p {
+  margin: 0 0 15px;
+}
+
+b,
+strong {
+  font-weight: 700;
+}
+
+dfn,
+cite,
+em,
+i {
+  font-style: italic;
+}
+
+blockquote {
+  padding: 10px 20px;
+  border-left: 5px solid #eee;
+  font-size: 16px;
+  margin: 10px 0;
+}
+blockquote.pullquote {
+  max-width: 300px;
+  margin-top: 0;
+}
+blockquote.pullquote.alignright {
+  margin-right: 0;
+}
+blockquote p {
+  margin: 0;
+}
+blockquote footer {
+  font-size: 80%;
+  color: #777;
+  line-height: 1.42857143;
+}
+
+blockquote > blockquote {
+  margin-left: 0;
+}
+
+blockquote p {
+  margin-bottom: 35px;
+}
+
+blockquote > p:last-child {
+  margin-bottom: 0;
+}
+
+blockquote cite,
+blockquote small {
+  color: #333;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 17px;
+  line-height: 1.6471;
+}
+
+blockquote em,
+blockquote i,
+blockquote cite {
+  font-style: normal;
+}
+
+blockquote strong,
+blockquote b {
+  font-weight: 400;
+}
+
+address {
+  font-style: italic;
+  margin: 0 0 28px;
+}
+
+code,
+kbd,
+tt,
+var,
+samp,
+pre {
+  font-family: Inconsolata, monospace;
+}
+
+pre {
+  background-color: #fcfcfc;
+  border: 1px solid #eaeaea;
+  font-size: 17px;
+  line-height: 1.2353;
+  margin-bottom: 28px;
+  max-width: 100%;
+  overflow: auto;
+  padding: 14px;
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+abbr[title] {
+  border-bottom: 1px dotted #eaeaea;
+  cursor: help;
+}
+
+mark,
+ins {
+  background-color: #fff9c0;
+  text-decoration: none;
+}
+
+sup,
+sub {
+  font-size: 75%;
+  height: 0;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  bottom: 1ex;
+}
+
+sub {
+  top: .5ex;
+}
+
+small {
+  font-size: 75%;
+}
+
+big {
+  font-size: 125%;
+}
+
+/**
+ * 3.0 Elements
+ */
+hr {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border-width: 0;
+  border-top: 1px solid #E1E1E1;
+}
+
+ul,
+ol {
+  margin: 0;
+}
+
+ul {
+  list-style: disc;
+}
+
+ol {
+  list-style: decimal;
+}
+
+li > ul,
+li > ol {
+  margin: 0 0 0 23px;
+}
+
+dl {
+  margin: 0 0 28px;
+}
+
+dt {
+  font-weight: bold;
+}
+
+dd {
+  margin: 0 0 28px;
+}
+
+table,
+th,
+td,
+.mce-item-table,
+.mce-item-table th,
+.mce-item-table td {
+  border: 1px solid #E1E1E1;
+}
+
+table a {
+  color: #333;
+}
+
+table,
+.mce-item-table {
+  border-collapse: separate;
+  border-spacing: 0;
+  border-width: 1px 0 0 1px;
+  margin: 0 0 28px;
+  width: 100%;
+}
+
+table th,
+.mce-item-table th,
+table caption {
+  border-width: 0 1px 1px 0;
+  font-family: "Noto Serif", serif;
+  font-size: 17px;
+  font-weight: 700;
+  padding: 7px;
+  text-align: left;
+  vertical-align: baseline;
+}
+
+table td,
+.mce-item-table td {
+  border-width: 0 1px 1px 0;
+  font-family: "Noto Serif", serif;
+  font-size: 17px;
+  padding: 7px;
+  vertical-align: baseline;
+}
+
+img {
+  border: 0;
+  height: auto;
+  max-width: 660px;
+  vertical-align: middle;
+}
+
+a img {
+  display: block;
+}
+
+figure {
+  margin: 0;
+}
+
+del {
+  opacity: 0.8;
+}
+
+a {
+  border-bottom: 1px solid #333;
+  color: #333;
+  text-decoration: none;
+}
+
+/**
+ * 4.0 Alignment
+ */
+.alignleft {
+  float: left;
+  margin: 5px 10px 10px 0;
+}
+
+.alignright {
+  float: right;
+  margin: 5px 0 10px 10px;
+}
+
+.aligncenter {
+  clear: both;
+  display: block;
+  margin: 7px auto;
+}
+
+/**
+ * 5.0 Caption
+ */
+.wp-caption {
+  background: transparent;
+  border: none;
+  color: #707070;
+  margin: 0 0 28px 0;
+  max-width: 660px;
+  padding: 0;
+  text-align: inherit;
+}
+
+.wp-caption.alignleft {
+  margin: 5px 15px 10px 0;
+}
+
+.wp-caption.alignright {
+  margin: 5px 0 15px 10px;
+}
+
+.wp-caption.aligncenter {
+  margin: 5px auto;
+}
+
+.wp-caption .wp-caption-text,
+.wp-caption-dd {
+  font-size: 14px;
+  line-height: 1.5;
+  padding: 7px 0;
+}
+
+/**
+ * 6.0 Galleries
+ */
+.gallery {
+  display: inline-block;
+  padding: 1.5em;
+  text-align: center;
+  vertical-align: top;
+  width: 100%;
+}
+
+.gallery-item {
+  display: inline-block;
+  text-align: center;
+  vertical-align: top;
+  width: 100%;
+}
+
+.gallery-columns-2 .gallery-item {
+  max-width: 50%;
+}
+
+.gallery-columns-3 .gallery-item {
+  max-width: 33.33%;
+}
+
+.gallery-columns-4 .gallery-item {
+  max-width: 25%;
+}
+
+.gallery-columns-5 .gallery-item {
+  max-width: 20%;
+}
+
+.gallery-columns-6 .gallery-item {
+  max-width: 16.66%;
+}
+
+.gallery-columns-7 .gallery-item {
+  max-width: 14.28%;
+}
+
+.gallery-columns-8 .gallery-item {
+  max-width: 12.5%;
+}
+
+.gallery-columns-9 .gallery-item {
+  max-width: 11.11%;
+}
+
+.gallery-caption {
+  display: block;
+}
+
+.gallery-columns-6 .gallery-caption,
+.gallery-columns-7 .gallery-caption,
+.gallery-columns-8 .gallery-caption,
+.gallery-columns-9 .gallery-caption {
+  display: none;
+}

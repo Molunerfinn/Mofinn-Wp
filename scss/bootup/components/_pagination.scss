@@ -1,0 +1,60 @@
+/** ––––––––––––––––––––
+ * Pagination
+ */
+ .pagination {
+ 	display: inline-block;
+	a, 
+	span, 
+	em {
+		position: relative;
+		float: left;
+		padding: 6px 12px;
+		font-size: 1.3rem;
+		text-decoration: none;
+		font-weight: normal;
+		background-color: #fff;
+		border: 1px solid $border_color;
+		margin-left: -1px;
+		color: $link_color;
+		white-space: nowrap;
+		vertical-align: middle;
+		cursor: pointer;
+		-webkit-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+		&:hover {
+			background-color: $border_color;
+		}
+		&:first-child {
+			border-top-left-radius: 3px;
+			border-bottom-left-radius: 3px;
+		}
+		&:last-child {
+			border-top-right-radius: 3px;
+			border-bottom-right-radius: 3px;
+		}
+	}
+	.gap {
+		background-color: #fafafa;
+		cursor: default;
+		color: #d3d3d3;
+	}
+	.current {
+		background-color: $primary_color;
+		border-color: $primary_color;
+		color: #fff;
+		z-index: 99;
+		&:hover {
+			background-color: $primary_color;
+		}
+	}
+	.disabled {
+		background-color: #fafafa;
+		cursor: not-allowed;
+		color: #d3d3d3;
+		&:hover {
+			background-color: #fafafa;
+		}
+	}
+ }
