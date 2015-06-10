@@ -1,9 +1,29 @@
+##Mofinn修改自EverBox
+感谢moyu的贡献。我十分喜欢EverBox这个主题，所以我打算改进它。
+[EverBox演示地址](http://demo.20theme.com/everbox-cn/ "http://demo.20theme.com/everbox-cn/")
+[Mofinn演示地址](http://molunerfinn.com "http://molunerfinn.com")
+
+##Mofinn 更新日志
+#### 2015/06/11 - v1.0PROA2
+- 让导航栏更加美观，给导航栏添加了3D旋转特效。
+
+#### 2015/06/07 - v1.0PROA1
+- 固定了导航栏并修改了它的透明度。
+- 删除了更新日志.txt，因为以后的更新全都会写在这里。
+
+----------
+
 ## Mofinn is changed from EverBox
 Thanks to moyu for his hard work.I like EverBox very much so I decide to develop it.
 
-## Mofinn Changelog
+[EverBox DEMO](http://demo.20theme.com/everbox-cn/ "http://demo.20theme.com/everbox-cn/")
+[Mofinn DEMO](http://molunerfinn.com "http://molunerfinn.com")
 
-#### 2015/06/07 - v1.0 PROA1
+## Mofinn Changelog
+#### 2015/06/11 - v1.0PROA2
+- Make the header more beautiful. Add 3D rotating effect on it.
+
+#### 2015/06/07 - v1.0PROA1
 - Fixed the header and change it's opacity.
 - Delete changelog.txt because changes will be written in here in the future.
 

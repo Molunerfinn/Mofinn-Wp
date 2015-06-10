@@ -2958,7 +2958,8 @@ img {
 ––––––––––––––––––––––––––––––––––*/
 .site-header {
   position: fixed;
-  width: 100%;
+  opacity: 0.8;
+  width: 100%; 
   min-height: 50px;
   text-align: center;
   color: #fff;
@@ -2968,7 +2969,6 @@ img {
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15), inset 0 1px 0 rgba(255, 255, 255, 0.15);
   z-index: 99;
   zoom: 1;
-  opacity: 0.8;
 }
 .site-header .container-fluid {
   position: fixed;
@@ -3045,6 +3045,9 @@ img {
   height: 50px;
 }
 
+
+/*---nav----*/
+
 div.main-nav > ul,
 ul.main-nav {
   margin: 0;
@@ -3063,7 +3066,8 @@ div.main-nav > ul > li.sfHover > a,
 ul.main-nav > li.sfHover > a {
   background-color: rgba(0, 0, 0, 0.05);
 }
-div.main-nav > ul > li.current > a:first-child, div.main-nav > ul > li.current-menu-item > a:first-child,
+div.main-nav > ul > li.current > a:first-child, 
+div.main-nav > ul > li.current-menu-item > a:first-child,
 ul.main-nav > li.current > a:first-child,
 ul.main-nav > li.current-menu-item > a:first-child {
   background-color: rgba(0, 0, 0, 0.1);
@@ -3072,22 +3076,22 @@ ul.main-nav > li.current-menu-item > a:first-child {
 div.main-nav > ul > li > a,
 ul.main-nav > li > a {
   display: block;
-  height: 50px;
-  line-height: 54px;
+  height: auto; /*母菜单栏高度*/
+  line-height: 50px;/*母菜单栏底部相对于页面顶部高度*/
   color: #fff;
-  padding: 0 15px;
+  padding: 0px 15px; /*菜单栏边距*/
   font-size: 16px;
   text-decoration: none;
 }
-div.main-nav > ul > li > a:hover,
+div.main-nav > ul > li > a:hover, /*触摸到母菜单栏时*/
 ul.main-nav > li > a:hover {
-  background: rgba(0, 0, 0, 0.05);
+  background: rgba(0, 0, 0, 0.05);/*母菜单栏的背景色*/
 }
 div.main-nav > ul > li a,
-ul.main-nav > li a {
+ul.main-nav > li a {     /*这是定义母菜单里文字的东西。例如颜色之类的*/
   text-decoration: none;
 }
-div.main-nav > ul > li.menu-item-has-children > a:after,
+/*div.main-nav > ul > li.menu-item-has-children > a:after,
 ul.main-nav > li.menu-item-has-children > a:after {
   content: "\f107";
   display: inline-block;
@@ -3107,59 +3111,97 @@ ul.main-nav > li.menu-item-has-children > a:after {
   font-weight: normal;
   color: #fff;
 }
+*/
+
+
 div.main-nav > ul li:hover > .sub-menu,
 div.main-nav > ul li:hover > .children,
+
 ul.main-nav li:hover > .sub-menu,
 ul.main-nav li:hover > .children {
   display: block;
 }
+
+
+ul.main-nav li:hover > .children ,
 div.main-nav > ul ul.sub-menu,
 div.main-nav > ul ul.children,
-ul.main-nav ul.sub-menu,
+ul.main-nav ul.sub-menu ,
 ul.main-nav ul.children {
-  display: none;
+  display: block;
   margin: 0;
   padding: 0;
-  min-width: 100%;
-  background: #2979e5;
+  max-width: 0%; /*必须设定成这样，否则sub-menu的宽度会影响到鼠标触发菜单栏的事件*/
   position: absolute;
   list-style: none;
   left: 0;
   top: 100%;
   z-index: 999;
+  perspective:400px; /*添加透视*/
 }
 div.main-nav > ul ul.sub-menu li,
 div.main-nav > ul ul.children li,
 ul.main-nav ul.sub-menu li,
 ul.main-nav ul.children li {
   position: relative;
-  float: none;
+  float:none;
+  background: #2979e5;
   margin: 0;
   padding: 8px 10px;
-  min-width: 100px;
+  min-width: 150px;
+  border-bottom:1px solid #698888; /*子菜单顶部与底部实线*/
+  border-top:1px solid #8fb9d6;
+  opacity:0; /*一开始透明度为0*/
+  transform:rotateY(79.4deg);/*为什么是79.4°我也没想明白，本来是90°旋转，但是79.4°就达到90°的效果了*/
+  transition:opacity .4s,transform .5s;
 }
-div.main-nav > ul ul.sub-menu li:hover, div.main-nav > ul ul.sub-menu li:active,
+
+/*以下是3D旋转效果实现*/
+  
+ul.main-nav >li:hover > .sub-menu li,
+ul.main-nav >li:hover > .children li,
+ul.main-nav >li:focus > .children li{opacity:0.8;transform:none},
+ul.main-nav >li:hover > .sub-menu>li:nth-child(1){transition-delay:0s}
+ul.main-nav >li:hover > .sub-menu>li:nth-child(2){transition-delay:70ms}
+ul.main-nav >li:hover > .sub-menu>li:nth-child(3){transition-delay:140ms}
+ul.main-nav >li:hover > .sub-menu>li:nth-child(4){transition-delay:210ms}
+ul.main-nav >li:hover > .sub-menu>li:nth-child(5){transition-delay:280ms}
+ul.main-nav >li:hover > .sub-menu>li:nth-child(6){transition-delay:350ms}
+ul.main-nav >li:hover > .sub-menu>li:nth-child(7){transition-delay:420ms}
+ul.main-nav >li:hover > .sub-menu>li:nth-child(8){transition-delay:470ms}
+/*这里给出8个子菜单，不够可以手动加，不过一般也不会太多。*/
+
+
+
+
+div.main-nav > ul ul.sub-menu li:hover, 
+/*div.main-nav > ul ul.sub-menu li:active,*/
 div.main-nav > ul ul.children li:hover,
 div.main-nav > ul ul.children li:active,
 ul.main-nav ul.sub-menu li:hover,
-ul.main-nav ul.sub-menu li:active,
+/*ul.main-nav ul.sub-menu li:active,*/
 ul.main-nav ul.children li:hover,
 ul.main-nav ul.children li:active {
   text-decoration: none;
-  background: rgba(0, 0, 0, 0.05);
+  background: #0066FF;  /*鼠标触及子菜单时子菜单显示的颜色*/
 }
 div.main-nav > ul ul.sub-menu li a,
 div.main-nav > ul ul.children li a,
-ul.main-nav ul.sub-menu li a,
+ul.main-nav ul.sub-menu li a ,
 ul.main-nav ul.children li a {
   display: block;
   position: relative;
-  color: #fff;
+  color: #fff; /*子菜单文字的颜色*/
   white-space: nowrap;
   font-size: 15px;
   line-height: 1.5;
+  
 }
-div.main-nav > ul ul.sub-menu li a.sf-with-ul:after,
+
+
+
+
+/*div.main-nav > ul ul.sub-menu li a.sf-with-ul:after,
 div.main-nav > ul ul.children li a.sf-with-ul:after,
 ul.main-nav ul.sub-menu li a.sf-with-ul:after,
 ul.main-nav ul.children li a.sf-with-ul:after {
@@ -3176,7 +3218,8 @@ ul.main-nav ul.children li a.sf-with-ul:after {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-div.main-nav > ul ul.sub-menu li ul.children,
+*/
+/*div.main-nav > ul ul.sub-menu li ul.children,
 div.main-nav > ul ul.sub-menu li ul.sub-menu,
 div.main-nav > ul ul.children li ul.children,
 div.main-nav > ul ul.children li ul.sub-menu,
@@ -3190,6 +3233,11 @@ ul.main-nav ul.children li ul.sub-menu {
   top: 0;
   z-index: 999;
 }
+*/
+
+
+/*---mobile*---*/
+
 
 .mobile-menu-container,
 .mobile-search-container {
