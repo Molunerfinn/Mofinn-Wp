@@ -1,18 +1,16 @@
 /**
- * Theme Name: EverBox
- * Description: EverBox is a finely crafted WordPress theme with clean layout. No matter which blog topic you are about to cover, you will find EverBox's features a perfect fit. It's fully responsive, retina ready and easy to customize.
- * Theme URI: http://www.20theme.com/themes/everbox
- * Version: 1.1.6
- * Author: moyu
- * Author URI: http://www.20theme.com
+ * Theme Name: Mofinn
+ * Description: Mofinn is changed from EverBox.It's friendly and simply.
+ * Theme URI: http://www.molunerfinn.com
+ * Version: 1.0 PRO-A3
+ * Author: Molunerfinn
+ * Author URI: http://www.molunerfinn.com
  * Tags: black, gray, white, dark, light, two-columns, right-sidebar, responsive-layout, custom-colors, custom-menu, featured-images, threaded-comments, translation-ready
  * License: GNU General Public License v2 or later
  * License URI: http://www.gnu.org/licenses/gpl-2.0.html
- * Text Domain: everbox
- * Domain Path: /languages
- *
- * EverBox WordPress Theme, Copyright 2015 moyu
- * EverBox is Distributed under the terms of the GNU GPL
+ * 
+ * Mofinn WordPress Theme, Copyright 2015 Molunerfinn
+ * Mofinn is Distributed under the terms of the GNU GPL
  * Use it to make something cool, have fun, and share what you've learned with others.
  */
 /*----------------------------------------------------------------------*/
@@ -3086,6 +3084,11 @@ ul.main-nav > li > a {
 div.main-nav > ul > li > a:hover, /*触摸到母菜单栏时*/
 ul.main-nav > li > a:hover {
   background: rgba(0, 0, 0, 0.05);/*母菜单栏的背景色*/
+  -webkit-transition:all .18s ease-out;
+  -moz-transition:all .18s ease-out;
+  -ms-transition:all .18s ease-out;
+  -o-transition:all .18s ease-out;
+  transition:all .18s ease-out;
 }
 div.main-nav > ul > li a,
 ul.main-nav > li a {     /*这是定义母菜单里文字的东西。例如颜色之类的*/
@@ -3128,7 +3131,7 @@ div.main-nav > ul ul.sub-menu,
 div.main-nav > ul ul.children,
 ul.main-nav ul.sub-menu ,
 ul.main-nav ul.children {
-  display: block;
+  display: inline-block;
   margin: 0;
   padding: 0;
   max-width: 0%; /*必须设定成这样，否则sub-menu的宽度会影响到鼠标触发菜单栏的事件*/
@@ -3137,7 +3140,8 @@ ul.main-nav ul.children {
   left: 0;
   top: 100%;
   z-index: 999;
-  perspective:400px; /*添加透视*/
+  -webkit-perspective:400px;-moz-perspective:400px;-ms-perspective:400px;-o-perspective:400px;perspective:400px;
+  /*添加透视*/
 }
 div.main-nav > ul ul.sub-menu li,
 div.main-nav > ul ul.children li,
@@ -3152,34 +3156,39 @@ ul.main-nav ul.children li {
   border-bottom:1px solid #698888; /*子菜单顶部与底部实线*/
   border-top:1px solid #8fb9d6;
   opacity:0; /*一开始透明度为0*/
+  -webkit-transform:rotateY(79.4deg);/*添加浏览器支持*/
+  -moz-transform:rotateY(79.4deg);
+  -ms-transform:rotateY(79.4deg);
+  -o-transform:rotateY(79.4deg);
   transform:rotateY(79.4deg);/*为什么是79.4°我也没想明白，本来是90°旋转，但是79.4°就达到90°的效果了*/
+  -webkit-transition:opacity .4s,-webkit-transform .5s;
+  -moz-transition:opacity .4s,-moz-transform .5s;
+  -ms-transition:opacity .4s,-ms-transform .5s;
+  -o-transition:opacity .4s,-o-transform .5s;
   transition:opacity .4s,transform .5s;
 }
 
 /*以下是3D旋转效果实现*/
-  
 ul.main-nav >li:hover > .sub-menu li,
 ul.main-nav >li:hover > .children li,
-ul.main-nav >li:focus > .children li{opacity:0.8;transform:none},
-ul.main-nav >li:hover > .sub-menu>li:nth-child(1){transition-delay:0s}
-ul.main-nav >li:hover > .sub-menu>li:nth-child(2){transition-delay:70ms}
-ul.main-nav >li:hover > .sub-menu>li:nth-child(3){transition-delay:140ms}
-ul.main-nav >li:hover > .sub-menu>li:nth-child(4){transition-delay:210ms}
-ul.main-nav >li:hover > .sub-menu>li:nth-child(5){transition-delay:280ms}
-ul.main-nav >li:hover > .sub-menu>li:nth-child(6){transition-delay:350ms}
-ul.main-nav >li:hover > .sub-menu>li:nth-child(7){transition-delay:420ms}
-ul.main-nav >li:hover > .sub-menu>li:nth-child(8){transition-delay:470ms}
+ul.main-nav >li:focus > .sub-menu li{opacity:1;-webkit-transform:none;-moz-transform:none;-ms-transform:none;-o-transform:none;transform:none},
+ul.main-nav  li:hover .sub-menu li:nth-child(1){-webkit-transition-delay:0s;-moz-transition-delay:0s;-ms-transition-delay:0s;-o-transition-delay:0s;transition-delay:0s}
+ul.main-nav  li:hover .sub-menu li:nth-child(2){-webkit-transition-delay:70ms;-moz-transition-delay:70ms;-ms-transition-delay:70ms;-o-transition-delay:70ms;transition-delay:70ms}
+ul.main-nav  li:hover .sub-menu li:nth-child(3){-webkit-transition-delay:140ms;-moz-transition-delay:140ms;-ms-transition-delay:140ms;-o-transition-delay:140ms;transition-delay:140ms}
+ul.main-nav  li:hover .sub-menu li:nth-child(4){-webkit-transition-delay:210ms;-moz-transition-delay:210ms;-ms-transition-delay:210ms;-o-transition-delay:210ms;transition-delay:210ms}
+ul.main-nav  li:hover .sub-menu li:nth-child(5){-webkit-transition-delay:280ms;-moz-transition-delay:280ms;-ms-transition-delay:280ms;-o-transition-delay:280ms;transition-delay:280ms}
+ul.main-nav  li:hover .sub-menu li:nth-child(6){-webkit-transition-delay:350ms;-moz-transition-delay:350ms;-ms-transition-delay:350ms;-o-transition-delay:350ms;transition-delay:350ms}
+ul.main-nav  li:hover .sub-menu li:nth-child(7){-webkit-transition-delay:420ms;-moz-transition-delay:420ms;-ms-transition-delay:420ms;-o-transition-delay:420ms;transition-delay:420ms}
+ul.main-nav  li:hover .sub-menu li:nth-child(8){-webkit-transition-delay:490ms;-moz-transition-delay:490ms;-ms-transition-delay:490ms;-o-transition-delay:490ms;transition-delay:490ms}
+
 /*这里给出8个子菜单，不够可以手动加，不过一般也不会太多。*/
 
-
-
-
 div.main-nav > ul ul.sub-menu li:hover, 
-/*div.main-nav > ul ul.sub-menu li:active,*/
+div.main-nav > ul ul.sub-menu li:active,
 div.main-nav > ul ul.children li:hover,
 div.main-nav > ul ul.children li:active,
 ul.main-nav ul.sub-menu li:hover,
-/*ul.main-nav ul.sub-menu li:active,*/
+ul.main-nav ul.sub-menu li:active,
 ul.main-nav ul.children li:hover,
 ul.main-nav ul.children li:active {
   text-decoration: none;
@@ -3197,8 +3206,6 @@ ul.main-nav ul.children li a {
   line-height: 1.5;
   
 }
-
-
 
 
 /*div.main-nav > ul ul.sub-menu li a.sf-with-ul:after,
