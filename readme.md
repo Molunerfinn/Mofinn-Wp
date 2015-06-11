@@ -4,6 +4,10 @@
 [Mofinn演示地址](http://molunerfinn.com "http://molunerfinn.com")
 
 ##Mofinn 更新日志
+#### 2015/06/12 - v1.0PROA3
+- Bug修复。该Bug会导致内核版本在40以下的Chrome浏览器无法很好地显示导航栏3D特效。建议更新至最新版本。
+- 修改说明文件以及页脚文件。
+
 #### 2015/06/11 - v1.0PROA2
 - 让导航栏更加美观，给导航栏添加了3D旋转特效。
 
@@ -17,9 +21,15 @@
 Thanks to moyu for his hard work.I like EverBox very much so I decide to develop it.
 
 [EverBox DEMO](http://demo.20theme.com/everbox-cn/ "http://demo.20theme.com/everbox-cn/")
+</br>
 [Mofinn DEMO](http://molunerfinn.com "http://molunerfinn.com")
 
 ## Mofinn Changelog
+
+#### 2015/06/12 - v1.0PROA3
+- Bug fixed.The bug makes the Chrome browser which the kernel version is under 40 can't display the 3D rotating effect on the header.You'd better update your browser to the latest version.
+- Alter the introduction and the footer.
+
 #### 2015/06/11 - v1.0PROA2
 - Make the header more beautiful. Add 3D rotating effect on it.
 
