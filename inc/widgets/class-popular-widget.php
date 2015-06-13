@@ -1,15 +1,15 @@
 <?php  
 
-class Everbox_Popular_Widget extends WP_Widget {
+class mofinn_Popular_Widget extends WP_Widget {
 
 	/**
 	 * Sets up the widget configures
 	 */
 	function __construct() {
 		parent::__construct(
-			'everbox_popular', // Base ID
-			__('EverBox - Tab Posts', 'everbox'), // Name
-			array( 'description' => __( 'A tab widget that contain popular posts list and latest posts list.', 'everbox' ), 'classname' => 'widget_stream-list' ) // Args
+			'mofinn_popular', // Base ID
+			__('mofinn - Tab Posts', 'mofinn'), // Name
+			array( 'description' => __( 'A tab widget that contain popular posts list and latest posts list.', 'mofinn' ), 'classname' => 'widget_stream-list' ) // Args
 		);
 	}
 
@@ -26,8 +26,8 @@ class Everbox_Popular_Widget extends WP_Widget {
 		extract( $args );
 		$class = '';
 
-		$popular_title 	= ( ! empty( $instance['popular_title'] ) ) ? 	$instance['popular_title'] 			: __( 'Popular', 'everbox' );
-		$latest_title 	= ( ! empty( $instance['latest_title'] ) ) 	? 	$instance['latest_title'] 			: __( 'Latest', 'everbox' );
+		$popular_title 	= ( ! empty( $instance['popular_title'] ) ) ? 	$instance['popular_title'] 			: __( 'Popular', 'mofinn' );
+		$latest_title 	= ( ! empty( $instance['latest_title'] ) ) 	? 	$instance['latest_title'] 			: __( 'Latest', 'mofinn' );
 		$range 			= ( ! empty( $instance['range'] ) ) 		? 	intval( $instance['range'] ) 		: '7';
 		$posts_num 		= ( ! empty( $instance['posts_num'] ) ) 	? 	intval( $instance['posts_num'] ) 	: 8;
 
@@ -36,8 +36,8 @@ class Everbox_Popular_Widget extends WP_Widget {
 		?>
 		<div class="widget-content">
 			<ul id="filter-toggle-buttons">
-				<li class="filter-button"><a href="#popular_posts-<?php echo $this->number; ?>"><?php echo $popular_title; ?></a></li>
 				<li class="filter-button"><a href="#latest_posts-<?php echo $this->number; ?>"><?php echo $latest_title; ?></a></li>
+				<li class="filter-button"><a href="#popular_posts-<?php echo $this->number; ?>"><?php echo $popular_title; ?></a></li>
 			</ul>
 			<!-- END #filter-toggle-buttons -->
 			<div id="popular_posts-<?php echo $this->number; ?>" class="posts-list tab_content">
@@ -83,17 +83,17 @@ class Everbox_Popular_Widget extends WP_Widget {
 						);
 						$output .=  sprintf( '<time class="entry-date published" datetime="%1$s">%2$s</time>',
 							esc_attr( get_the_date( 'c' ) ),
-							esc_html( human_time_diff( get_the_time('U'), current_time('timestamp') ) . __(' ago', 'everbox') )
+							esc_html( human_time_diff( get_the_time('U'), current_time('timestamp') ) . __(' ago', 'mofinn') )
 						);
 						$output .= '<span class="divider">&bull;</span>';
-						$output .= '<span class="comments-count">' . sprintf( __('%s Comments', 'everbox'), get_comments_number() ) . '<span>';
+						$output .= '<span class="comments-count">' . sprintf( __('%s Comments', 'mofinn'), get_comments_number() ) . '<span>';
 						$output .=	'</div>';
 						$output .=	'</li>';
 					endwhile;
 					$output .= "</ul>";
 					echo $output;
 				else :
-					_e('No Posts', 'everbox');
+					_e('No Posts', 'mofinn');
 				endif;
 				wp_reset_postdata();
 			?>
@@ -120,7 +120,7 @@ class Everbox_Popular_Widget extends WP_Widget {
 						);
 						$output .=  sprintf( '<time class="entry-date published" datetime="%1$s">%2$s</time>',
 							esc_attr( get_the_date( 'c' ) ),
-							esc_html( human_time_diff( get_the_time('U'), current_time('timestamp') ) . __(' ago', 'everbox') )
+							esc_html( human_time_diff( get_the_time('U'), current_time('timestamp') ) . __(' ago', 'mofinn') )
 						);
 						$output .=	'</div>';
 						$output .=	'</li>';
@@ -128,7 +128,7 @@ class Everbox_Popular_Widget extends WP_Widget {
 					$output .= "</ul>";
 					echo $output;
 				else :
-					_e('No Posts', 'everbox');
+					_e('No Posts', 'mofinn');
 				endif;
 				wp_reset_postdata();
 			?>
@@ -149,34 +149,34 @@ class Everbox_Popular_Widget extends WP_Widget {
 	 */
 	function form( $instance ) {
 
-		$popular_title 	= ( ! empty( $instance['popular_title'] ) ) 	? esc_attr( $instance['popular_title'] ) 	: __('Popular', 'everbox');
-		$latest_title 	= ( ! empty( $instance['latest_title'] ) )		? esc_attr( $instance['latest_title'] ) 	: __('Latest', 'everbox');
+		$popular_title 	= ( ! empty( $instance['popular_title'] ) ) 	? esc_attr( $instance['popular_title'] ) 	: __('Popular', 'mofinn');
+		$latest_title 	= ( ! empty( $instance['latest_title'] ) )		? esc_attr( $instance['latest_title'] ) 	: __('Latest', 'mofinn');
 		$range 			= ( ! empty( $instance['range'] ) )				? intval( $instance['range'] ) 				: 1;
 		$posts_num 		= ( ! empty( $instance['posts_num'] ) ) 		? intval( $instance['posts_num'] ) 			: 8;
 
 		?>
 		<p>
-			<label for="<?php echo $this->get_field_id( 'popular_title' ); ?>"><?php _e( 'Popular tab title:', 'everbox' ); ?></label>
+			<label for="<?php echo $this->get_field_id( 'popular_title' ); ?>"><?php _e( 'Popular tab title:', 'mofinn' ); ?></label>
 			<input class="widefat" id="<?php echo $this->get_field_id( 'popular_title' ); ?>" name="<?php echo $this->get_field_name( 'popular_title' ); ?>" type="text" value="<?php echo $popular_title; ?>" />
 		</p>
 		<p>
-			<label for="<?php echo $this->get_field_id( 'range' ); ?>"><?php _e( 'Range:', 'everbox' ); ?></label>
+			<label for="<?php echo $this->get_field_id( 'range' ); ?>"><?php _e( 'Range:', 'mofinn' ); ?></label>
 			<br />
 			<select class='widefat' name="<?php echo $this->get_field_name('range'); ?>" id="<?php echo $this->get_field_id('range'); ?>">
-				<option value="1" <?php selected( '1', $range ); ?>><?php _e( 'Last 1 days', 'everbox' ); ?></option>
-				<option value="7" <?php selected( '7', $range ); ?>><?php _e( 'Last 7 days', 'everbox' ); ?></option>
-				<option value="30" <?php selected( '30', $range ); ?>><?php _e( 'Last 30 days', 'everbox' ); ?></option>
+				<option value="1" <?php selected( '1', $range ); ?>><?php _e( 'Last 1 days', 'mofinn' ); ?></option>
+				<option value="7" <?php selected( '7', $range ); ?>><?php _e( 'Last 7 days', 'mofinn' ); ?></option>
+				<option value="30" <?php selected( '30', $range ); ?>><?php _e( 'Last 30 days', 'mofinn' ); ?></option>
 			</select>
 		</p>
 		<hr>
 		<p>
-			<label for="<?php echo $this->get_field_id( 'latest_title' ); ?>"><?php _e( 'Latest tab title:', 'everbox' ); ?></label>
+			<label for="<?php echo $this->get_field_id( 'latest_title' ); ?>"><?php _e( 'Latest tab title:', 'mofinn' ); ?></label>
 			<input class="widefat" id="<?php echo $this->get_field_id( 'latest_title' ); ?>" name="<?php echo $this->get_field_name( 'latest_title' ); ?>" type="text" value="<?php echo $latest_title; ?>" />
 		</p>
 		<p>
-			<label for="<?php echo $this->get_field_id( 'posts_num' ); ?>"><?php _e( 'Posts num:', 'everbox' ); ?></label>
+			<label for="<?php echo $this->get_field_id( 'posts_num' ); ?>"><?php _e( 'Posts num:', 'mofinn' ); ?></label>
 			<input class="widefat" id="<?php echo $this->get_field_id( 'posts_num' ); ?>" name="<?php echo $this->get_field_name( 'posts_num' ); ?>" type="number" value="<?php echo $posts_num; ?>" />
-			<label for="<?php echo $this->get_field_id( 'posts_num' ); ?>"><?php _e('how many posts you want to show for both popular tab and latest tab.', 'everbox'); ?></label>
+			<label for="<?php echo $this->get_field_id( 'posts_num' ); ?>"><?php _e('how many posts you want to show for both popular tab and latest tab.', 'mofinn'); ?></label>
 		</p>
 		<?php
 	}

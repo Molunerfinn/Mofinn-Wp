@@ -8,7 +8,7 @@
  * E.g., it puts together the home page when no home.php file exists.
  * Learn more: http://codex.wordpress.org/Template_Hierarchy
  *
- * @package EverBox
+ * @package mofinn
  */
 
 get_header(); ?>
@@ -20,7 +20,7 @@ get_header(); ?>
 			while(have_posts()) : the_post();
 				get_template_part( 'content', '' );
 			endwhile;
-			everbox_posts_pagination();
+			mofinn_posts_pagination();
 		else:
 			get_template_part( 'content', 'none' );
 		endif;

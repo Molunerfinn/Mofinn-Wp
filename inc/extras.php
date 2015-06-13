@@ -4,32 +4,32 @@
  *
  * Eventually, some of the functionality here could be replaced by core features
  *
- * @package EverBox
+ * @package mofinn
  */
 
 /**
  * Change default excerpt more text
  */
-function everbox_custom_excerpt_more( $more ) {
+function mofinn_custom_excerpt_more( $more ) {
     return '...';
 }
-add_filter('excerpt_more', 'everbox_custom_excerpt_more');
+add_filter('excerpt_more', 'mofinn_custom_excerpt_more');
 
 /**
  * Change default excerpt text
  */
-function everbox_custom_excerpt( $excerpt ) {
-    return $excerpt . '<a class="read-more" href="'. get_permalink( get_the_ID() ) . '">' . __('Read More  &raquo;', 'everbox') . '</a>';
+function mofinn_custom_excerpt( $excerpt ) {
+    return $excerpt . '<a class="read-more" href="'. get_permalink( get_the_ID() ) . '">' . __('Read More  &raquo;', 'mofinn') . '</a>';
 }
-add_filter('the_excerpt', 'everbox_custom_excerpt');
+add_filter('the_excerpt', 'mofinn_custom_excerpt');
 /**
  * Change default excerpt length
  */
-function everbox_custom_excerpt_length( $length ) {
-    $custom_length = intval( get_theme_mod( 'everbox_excerpt_length', '60' ) );
+function mofinn_custom_excerpt_length( $length ) {
+    $custom_length = intval( get_theme_mod( 'mofinn_excerpt_length', '60' ) );
 	return $custom_length;
 }
-add_filter( 'excerpt_length', 'everbox_custom_excerpt_length', 999 );
+add_filter( 'excerpt_length', 'mofinn_custom_excerpt_length', 999 );
 
 /**
  * Post comments
@@ -38,7 +38,7 @@ add_filter( 'excerpt_length', 'everbox_custom_excerpt_length', 999 );
  * @param  string $depth
  * @return string
  */
-function everbox_comments( $comment , $args , $depth ) {
+function mofinn_comments( $comment , $args , $depth ) {
 
     $GLOBALS['comment'] = $comment;
         $comment_post = get_post($comment->comment_post_ID);
@@ -65,7 +65,7 @@ function everbox_comments( $comment , $args , $depth ) {
 					if ( $comment->user_id === $comment_post->post_author ) {
 				?>
 				<span>&bull;</span>
-				<span class="comment-byauthor"><?php _e('Author', 'everbox' ); ?></span>
+				<span class="comment-byauthor"><?php _e('Author', 'mofinn' ); ?></span>
 				<?php
 					}
 				}
@@ -73,7 +73,7 @@ function everbox_comments( $comment , $args , $depth ) {
 
 			</div>
       		<?php if ($comment->comment_approved == '0') : ?>
-            <div class="alert alert-info"><?php _e('Your comment is awaiting approval.','everbox');?></div>
+            <div class="alert alert-info"><?php _e('Your comment is awaiting approval.','mofinn');?></div>
         	<?php endif; ?>
 
 	        <?php comment_text(); ?>
@@ -86,8 +86,8 @@ function everbox_comments( $comment , $args , $depth ) {
 /**
  * Posts pagination
  */
-function everbox_posts_pagination() {
-    $infinite = get_theme_mod( 'everbox_infinite', 0 );
+function mofinn_posts_pagination() {
+    $infinite = get_theme_mod( 'mofinn_infinite', 0 );
     if( $infinite ) {
         return;
     }
@@ -103,14 +103,14 @@ function everbox_posts_pagination() {
  *
  * When there is no menu set, display the warning message.
  */
-function everbox_nav_cb() {
-    printf( '<div class="menu-warning">' . __('Sorry, you have not set any menus.', 'everbox') . '</div>');
+function mofinn_nav_cb() {
+    printf( '<div class="menu-warning">' . __('Sorry, you have not set any menus.', 'mofinn') . '</div>');
 }
 
 /**
  * Sanitizes a hex color.
  */
-function everbox_sanitize_hex_color( $color ) {
+function mofinn_sanitize_hex_color( $color ) {
     if ( '' === $color  || false == $color) {
         return '';
     }
@@ -124,13 +124,13 @@ function everbox_sanitize_hex_color( $color ) {
 /**
  * Sanitizes integer.
  */
-function everbox_sanitize_integer( $input ) {
+function mofinn_sanitize_integer( $input ) {
     return absint( $input );
 }
 /**
  * Sanitizes bool.
  */
-function everbox_sanitize_bool( $input ) {
+function mofinn_sanitize_bool( $input ) {
     if($input) {
         return 1;
     }

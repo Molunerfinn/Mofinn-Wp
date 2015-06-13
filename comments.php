@@ -5,7 +5,7 @@
  * The area of the page that contains both current comments
  * and the comment form.
  *
- * @package EverBox
+ * @package mofinn
  */
 
 /*
@@ -21,21 +21,21 @@ if ( post_password_required() ) {
 <div id="comments" class="comments-area">
 
 	<header class="comment-header clearfix">
-		<h3 class="comment-title"><?php comments_number(__('No Comments','everbox'),__('1 Comment','everbox'),__('% Comments','everbox')); ?></h3>
+		<h3 class="comment-title"><?php comments_number(__('No Comments','mofinn'),__('1 Comment','mofinn'),__('% Comments','mofinn')); ?></h3>
 	</header>
 
 	<?php if ( have_comments() ) : ?>
 
 		<ul class="comments-list">
 			
-			<?php  wp_list_comments('callback=everbox_comments');?>
+			<?php  wp_list_comments('callback=mofinn_comments');?>
 			
 		</ul>
 
 		<?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : // are there comments to navigate through ?>
 		<nav id="comment-nav-below" class="comment-navigation" role="navigation">
-			<div class="nav-previous"><?php previous_comments_link( __( '&larr; Older Comments', 'everbox' ) ); ?></div>
-			<div class="nav-next"><?php next_comments_link( __( 'Newer Comments &rarr;', 'everbox' ) ); ?></div>
+			<div class="nav-previous"><?php previous_comments_link( __( '&larr; Older Comments', 'mofinn' ) ); ?></div>
+			<div class="nav-next"><?php next_comments_link( __( 'Newer Comments &rarr;', 'mofinn' ) ); ?></div>
 		</nav><!-- #comment-nav-below -->
 		<?php endif; // check for comment navigation ?>
 
@@ -45,7 +45,7 @@ if ( post_password_required() ) {
 		// If comments are closed and there are comments, let's leave a little note, shall we?
 		if ( ! comments_open() && '0' != get_comments_number() && post_type_supports( get_post_type(), 'comments' ) ) :
 	?>
-		<p class="no-comments"><?php _e( 'Comments are closed.', 'everbox' ); ?></p>
+		<p class="no-comments"><?php _e( 'Comments are closed.', 'mofinn' ); ?></p>
 	<?php endif; ?>
 
 	<?php comment_form(); ?>

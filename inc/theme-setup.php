@@ -7,7 +7,7 @@ if ( ! isset( $content_width ) ) {
 	$content_width = 790; /* pixels */
 }
 
-if( !function_exists('everbox_setup') ) :
+if( !function_exists('mofinn_setup') ) :
 /**
  * Sets up theme defaults and registers support for various WordPress features.
  *
@@ -15,15 +15,15 @@ if( !function_exists('everbox_setup') ) :
  * runs before the init hook. The init hook is too late for some features, such
  * as indicating support for post thumbnails.
  */
-function everbox_theme_setup() {
+function mofinn_theme_setup() {
 
 	/*
 	 * Make theme available for translation.
 	 * Translations can be filed in the /languages/ directory.
-	 * If you're building a theme based on EverBox, use a find and replace
-	 * to change 'everbox' to the name of your theme in all the template files
+	 * If you're building a theme based on mofinn, use a find and replace
+	 * to change 'mofinn' to the name of your theme in all the template files
 	 */
-	load_theme_textdomain( 'everbox', get_template_directory() . '/languages' );
+	load_theme_textdomain( 'mofinn', get_template_directory() . '/languages' );
 	
 	// Add default posts and comments RSS feed links to head.
 	add_theme_support( 'automatic-feed-links' );
@@ -47,8 +47,8 @@ function everbox_theme_setup() {
 
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
-		'primary' => __( 'Primary Menu', 'everbox' ),
-		'footer' => __( 'Sidebar Menu', 'everbox' )
+		'primary' => __( 'Primary Menu', 'mofinn' ),
+		'footer' => __( 'Sidebar Menu', 'mofinn' )
 	) );
 
 	/*
@@ -61,59 +61,59 @@ function everbox_theme_setup() {
 
 }
 endif;
-add_action( 'after_setup_theme', 'everbox_theme_setup' );
+add_action( 'after_setup_theme', 'mofinn_theme_setup' );
 
 /**
  * Register widget area.
  *
  * @link http://codex.wordpress.org/Function_Reference/register_sidebar
  */
-function everbox_widgets_init() {
+function mofinn_widgets_init() {
 
 	register_sidebar( array(
-		'name'          => __( 'Sidebar', 'everbox' ),
+		'name'          => __( 'Sidebar', 'mofinn' ),
 		'id'            => 'sidebar-default',
-		'description'   => __( 'Default sidebar.', 'everbox' ),
+		'description'   => __( 'Default sidebar.', 'mofinn' ),
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</aside>',
 		'before_title'  => '<div class="widget-head"><h3 class="widget-title">',
 		'after_title'   => '</h3></div>',
 	) );
 	register_sidebar( array(
-		'name'          => __( 'Post Sidebar', 'everbox' ),
+		'name'          => __( 'Post Sidebar', 'mofinn' ),
 		'id'            => 'sidebar-alter',
-		'description'   => __( 'Sidebar replace default sidebar for single post & page.', 'everbox' ),
+		'description'   => __( 'Sidebar replace default sidebar for single post & page.', 'mofinn' ),
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</aside>',
 		'before_title'  => '<div class="widget-head"><h3 class="widget-title">',
 		'after_title'   => '</h3></div>',
 	) );
 
-	register_widget( 'Everbox_Popular_Widget' );
+	register_widget( 'mofinn_Popular_Widget' );
 }
-add_action( 'widgets_init', 'everbox_widgets_init' );
+add_action( 'widgets_init', 'mofinn_widgets_init' );
 
 /**
  * Enqueue scripts and styles.
  */
-function everbox_scripts() {
+function mofinn_scripts() {
 
-	wp_enqueue_style( 'everbox-style', get_stylesheet_uri() );
-	wp_enqueue_script('velocity-js', EVERBOX_URL . '/js/velocity.js', array('jquery'), null, false );
-	wp_enqueue_script('velocity-ui-js', EVERBOX_URL . '/js/velocity.ui.js', array('jquery'), null, false );
-	wp_enqueue_script('fastclick-js', EVERBOX_URL . '/js/fastclick.js', array('jquery'), null, false );
-	wp_enqueue_script('site-js', EVERBOX_URL . '/js/site.js', array('jquery'), null, true );
+	wp_enqueue_style( 'mofinn-style', get_stylesheet_uri() );
+	wp_enqueue_script('velocity-js', mofinn_URL . '/js/velocity.js', array('jquery'), null, false );
+	wp_enqueue_script('velocity-ui-js', mofinn_URL . '/js/velocity.ui.js', array('jquery'), null, false );
+	wp_enqueue_script('fastclick-js', mofinn_URL . '/js/fastclick.js', array('jquery'), null, false );
+	wp_enqueue_script('site-js', mofinn_URL . '/js/site.js', array('jquery'), null, true );
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
 }
-add_action( 'wp_enqueue_scripts', 'everbox_scripts' );
+add_action( 'wp_enqueue_scripts', 'mofinn_scripts' );
 
 /**
  * Add editor style
  */
-function everbox_add_editor_styles() {
-    add_editor_style( EVERBOX_URL . '/css/editor-style.css' );
+function mofinn_add_editor_styles() {
+    add_editor_style( mofinn_URL . '/css/editor-style.css' );
 }
-add_action( 'admin_init', 'everbox_add_editor_styles' );
+add_action( 'admin_init', 'mofinn_add_editor_styles' );
 ?>

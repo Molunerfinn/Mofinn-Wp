@@ -12,7 +12,7 @@
 		} );
 	} );
 	// Primary color.
-	wp.customize( 'everbox_primary_color', function( value ) {
+	wp.customize( 'mofinn_primary_color', function( value ) {
 		value.bind( function( to ) {
 			if ( 'blank' === to || '' == to || false == to ) {
 				$( '.post-meta .author' ).css( {

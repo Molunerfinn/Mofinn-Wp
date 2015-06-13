@@ -1,8 +1,8 @@
 /**
  * Theme Name: Mofinn
- * Description: Mofinn is changed from EverBox.It's friendly and simply.
+ * Description: Mofinn is changed from mofinn.It's friendly and simply.
  * Theme URI: http://www.molunerfinn.com
- * Version: 1.0 PRO-A3
+ * Version: 1.0 PRO-A4
  * Author: Molunerfinn
  * Author URI: http://www.molunerfinn.com
  * Tags: black, gray, white, dark, light, two-columns, right-sidebar, responsive-layout, custom-colors, custom-menu, featured-images, threaded-comments, translation-ready
@@ -3027,7 +3027,7 @@ img {
 
 .mobile-search-toggle {
   display: none;
-  position: absolute;
+  position: fixed;
   right: 10px;
   top: 13px;
   z-index: 999;
@@ -3249,10 +3249,11 @@ ul.main-nav ul.children li ul.sub-menu {
 .mobile-menu-container,
 .mobile-search-container {
   display: none;
-  position: relative;
+  position: absolute;
   overflow: hidden;
   background: #2979e5;
   z-index: 99;
+  margin-top: 50px;
 }
 
 ul.mobile-menu {
@@ -3265,8 +3266,10 @@ ul.mobile-menu {
 ul.mobile-menu li {
   position: relative;
   margin: 0;
+  min-width: 150px;       /*菜单栏最小宽度固定*/
 }
 ul.mobile-menu li.menu-item-has-children > a:after {
+
   content: "\f107";
   display: inline-block;
   font-family: 'icomoon';
@@ -3291,11 +3294,12 @@ ul.mobile-menu li.menu-item-has-children > a:after {
   color: #fff;
 }
 ul.mobile-menu li > ul {
+  display: none;           /*将子菜单修改为不显示，为了避免子菜单过多导致溢出*/
   margin: 0 0 0 35px;
   padding: 0;
   list-style-type: none;
 }
-ul.mobile-menu li > ul > li > ul {
+/*ul.mobile-menu li > ul > li > ul {
   margin: 0 0 0 35px;
   padding: 0;
   list-style-type: none;
@@ -3315,6 +3319,7 @@ ul.mobile-menu li > ul > li > ul > li > ul > li > ul ul {
   padding: 0;
   list-style-type: none;
 }
+*/
 ul.mobile-menu a {
   display: block;
   text-decoration: none;

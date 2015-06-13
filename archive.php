@@ -4,7 +4,7 @@
  *
  * Learn more: http://codex.wordpress.org/Template_Hierarchy
  *
- * @package EverBox
+ * @package mofinn
  */
 
 get_header(); ?>
@@ -35,7 +35,7 @@ get_header(); ?>
 					get_template_part( 'content', '' );
 
 				endwhile;
-				everbox_posts_pagination();
+				mofinn_posts_pagination();
 			else :
 
 				get_template_part( 'content', 'none' );

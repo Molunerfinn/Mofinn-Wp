@@ -2,7 +2,7 @@
 /**
  * The template for displaying all single posts.
  *
- * @package EverBox
+ * @package mofinn
  */
 
 get_header();
@@ -18,9 +18,9 @@ the_post();
 				</div>
 				<!-- END .entry-thumbnail -->
 			<?php endif; ?>
-				<?php everbox_post_category(); ?>
+				<?php mofinn_post_category(); ?>
 				<h1 class="entry-title"><?php the_title(); ?></h1>
-				<?php everbox_post_meta(); ?>
+				<?php mofinn_post_meta(); ?>
 			</header>
 			<!-- END .entry-header -->
 			<div class="entry-content">
@@ -35,12 +35,12 @@ the_post();
 			</div>
 			<!-- END .entry-content -->
 			<footer class="entry-footer">
-				<?php everbox_post_tags(); ?>
+				<?php mofinn_post_tags(); ?>
 			</footer>
 			<!-- END .entry-footer -->
 		</article>
 		<!-- END .single-post -->
-		<?php everbox_post_navigation(); ?>
+		<?php mofinn_post_navigation(); ?>
 
 		<?php
 			// If comments are open or we have at least one comment, load up the comment template

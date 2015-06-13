@@ -4,29 +4,29 @@
  *
  * Learn more: http://codex.wordpress.org/Template_Hierarchy
  *
- * @package EverBox
+ * @package mofinn
  */
 ?>
 
 <section class="no-results not-found">
 	<header class="page-header">
-		<h1 class="page-title"><?php _e( 'Nothing Found', 'everbox' ); ?></h1>
+		<h1 class="page-title"><?php _e( 'Nothing Found', 'mofinn' ); ?></h1>
 	</header>
 	<!-- END .page-header -->
 
 	<div class="page-content">
 		<?php if ( is_home() && current_user_can( 'publish_posts' ) ) : ?>
 
-			<p><?php printf( __( 'Ready to publish your first post? <a href="%s">Get started here</a>.', 'everbox' ), esc_url( admin_url( 'post-new.php' ) ) ); ?></p>
+			<p><?php printf( __( 'Ready to publish your first post? <a href="%s">Get started here</a>.', 'mofinn' ), esc_url( admin_url( 'post-new.php' ) ) ); ?></p>
 
 		<?php elseif ( is_search() ) : ?>
 
-			<p><?php _e( 'Sorry, but nothing matched your search terms. Please try again with some different keywords.', 'everbox' ); ?></p>
+			<p><?php _e( 'Sorry, but nothing matched your search terms. Please try again with some different keywords.', 'mofinn' ); ?></p>
 			<?php get_search_form(); ?>
 
 		<?php else : ?>
 
-			<p><?php _e( 'It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help.', 'everbox' ); ?></p>
+			<p><?php _e( 'It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help.', 'mofinn' ); ?></p>
 			<?php get_search_form(); ?>
 
 		<?php endif; ?>

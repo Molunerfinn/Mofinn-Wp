@@ -1,4 +1,4 @@
-## EverBox
+## mofinn
 Contributors: moyu  
 Tags: black, green, gray, white, dark, light, two-columns, right-sidebar, fixed-layout, responsive-layout, custom-colors, custom-menu, featured-images, threaded-comments, translation-ready  
 Requires at least: 4.1  
@@ -6,11 +6,11 @@ Tested up to: 4.1
 Stable tag: 4.1 
 License: GPLv2 or later  
 License URI: http://www.gnu.org/licenses/gpl-2.0.html  
-Live Demo: http://demo.20theme.com/everbox  
+Live Demo: http://demo.20theme.com/mofinn  
 
 ## CopyRight/License
-EverBox WordPress Theme, Copyright 2015 moyu
-EverBox is Distributed under the terms of the GNU GPL
+mofinn WordPress Theme, Copyright 2015 moyu
+mofinn is Distributed under the terms of the GNU GPL
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -25,7 +25,7 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with this program. If not, see < http://www.gnu.org/licenses/ >
 
-## EverBox WordPress Theme bundles the following third-party resources:
+## mofinn WordPress Theme bundles the following third-party resources:
 VelocityJS.org (1.2.1)  
 (C) 2014 Julian Shapiro.  
 MIT @license: en.wikipedia.org/wiki/MIT_License  
@@ -50,26 +50,26 @@ Source: https://icomoon.io
 Source: http://www.fontawesome.io  
 
 ## Description
-EverBox is a finely crafted WordPress theme with clean layout. No matter which blog topic you are about to cover, you will find EverBox’s features a perfect fit. It’s fully responsive, retina ready and easy to customize. Every elements are responsive to give your readers best user experience throughout your blog. Not just about design, EverBox is compatible with the latest versions of all modern browsers – Chrome, Safari, FireFox, Opera, IE8 and above.
+mofinn is a finely crafted WordPress theme with clean layout. No matter which blog topic you are about to cover, you will find mofinn’s features a perfect fit. It’s fully responsive, retina ready and easy to customize. Every elements are responsive to give your readers best user experience throughout your blog. Not just about design, mofinn is compatible with the latest versions of all modern browsers – Chrome, Safari, FireFox, Opera, IE8 and above.
 
 ## Features
 **Mobile Web App**  
 In theme customizer panel page, you can set your own mobile web app icon and startup image, which make your site more like a native mobile app.
 
 **Responsive Design**  
-Designed for Mobile, Tablets, Laptop and Desktop Devices. With responsive design, EverBox will dynamically adjust to any devices viewport. Try it out on your mobile device!
+Designed for Mobile, Tablets, Laptop and Desktop Devices. With responsive design, mofinn will dynamically adjust to any devices viewport. Try it out on your mobile device!
 
 **Friendly Theme Settings**  
 You can easily customize the theme logo, favicon, site primary color in the theme customizer panel.
 
 **Unlimited Colors**  
-Choose any color you like and change the appearance of EverBox.
+Choose any color you like and change the appearance of mofinn.
 
 **Clean Code**  
-EverBox has been built with the latest submission requirements based on the WordPress Codex, everything is working as intended.
+mofinn has been built with the latest submission requirements based on the WordPress Codex, everything is working as intended.
 
 **Infinite Pagination**  
-EverBox supports infinite pagination feature of Jetpack.
+mofinn supports infinite pagination feature of Jetpack.
 
 **Translation Ready**  
 You can translate the Theme to your own language. The theme includes .pot file for easy translation.

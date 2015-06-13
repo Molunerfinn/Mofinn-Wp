@@ -2,7 +2,7 @@
 /**
  * The template for displaying search results pages.
  *
- * @package EverBox
+ * @package mofinn
  */
 
 get_header(); ?>
@@ -13,7 +13,7 @@ get_header(); ?>
 	<?php if ( have_posts() ) : ?>
 
 		<header class="search-header">
-			<h1 class="search-title"><?php printf( __( 'Search Results for: %s', 'everbox' ), '<span>' . get_search_query() . '</span>' ); ?></h1>
+			<h1 class="search-title"><?php printf( __( 'Search Results for: %s', 'mofinn' ), '<span>' . get_search_query() . '</span>' ); ?></h1>
 		</header>
 		<!-- END .search-header -->
 
@@ -31,7 +31,7 @@ get_header(); ?>
 
 		<?php endwhile; ?>
 
-		<?php everbox_posts_pagination(); ?>
+		<?php mofinn_posts_pagination(); ?>
 
 	<?php else : ?>
 

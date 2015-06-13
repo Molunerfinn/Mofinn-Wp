@@ -3,7 +3,7 @@
 		<div class="input-group">
 			<input type="text" class="form-control" value="" name="s" id="s">
 			<span class="input-group-btn">
-				<button type="submit" class="btn-primary"><?php _e('Go', 'everbox') ?></button>
+				<button type="submit" class="btn-primary"><?php _e('Go', 'mofinn') ?></button>
 			</span>
 		</div>
 	</form>

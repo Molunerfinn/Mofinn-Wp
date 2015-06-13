@@ -8,7 +8,7 @@ get_header();
 			while(have_posts()) : the_post();
 				get_template_part( 'content', '' );
 			endwhile;
-			everbox_posts_pagination();
+			mofinn_posts_pagination();
 		else:
 			get_template_part( 'content', 'none' );
 		endif;

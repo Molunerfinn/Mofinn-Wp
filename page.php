@@ -7,7 +7,7 @@
  * and that other 'pages' on your WordPress site will use a
  * different template.
  *
- * @package EverBox
+ * @package mofinn
  */
 
 get_header();
@@ -15,7 +15,7 @@ the_post();
 ?>
 <div id="primary" class="left-column">
 	<main id="main" class="site-main" role="main">
-		<?php do_action('everbox_before_content'); ?>
+		<?php do_action('mofinn_before_content'); ?>
 		<article id="page-<?php the_ID(); ?>" <?php post_class( 'single-page' ); ?>>
 			<header class="page-header">
 				<h1 class="entry-title"><?php the_title(); ?></h1>
@@ -34,7 +34,7 @@ the_post();
 			<!-- END .entry-content -->
 		</article>
 		<!-- END .single-post -->
-		<?php do_action('everbox_after_post'); ?>
+		<?php do_action('mofinn_after_post'); ?>
 		<?php
 			// If comments are open or we have at least one comment, load up the comment template
 			if ( comments_open() || get_comments_number() ) :

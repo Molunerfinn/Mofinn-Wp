@@ -1,6 +1,6 @@
 <?php
 /**
- * @package EverBox
+ * @package mofinn
  */
 ?>
 
@@ -15,7 +15,7 @@
 	<!-- END .right -->
 	<?php endif; ?>
 	<div class="left">
-		<?php everbox_post_category(); ?>
+		<?php mofinn_post_category(); ?>
 		<h2 class="post-title">
 		<?php 
 			printf('<a href="%1$s" title="%2$s" rel="bookmark">%3$s</a>', 
@@ -24,11 +24,11 @@
 				get_the_title() 
 			); 
 			if(is_sticky()) {
-				echo '<span class="sub-label">'. __('Sticky', 'everbox') .'</span>';
+				echo '<span class="sub-label">'. __('Sticky', 'mofinn') .'</span>';
 			}
 		?>
 		</h2>
-		<?php everbox_post_meta(); ?>
+		<?php mofinn_post_meta(); ?>
 		<div class="post-excerpt">
 			<?php the_excerpt(); ?>
 		</div>

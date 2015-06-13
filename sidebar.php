@@ -2,7 +2,7 @@
 /**
  * The sidebar containing the main widget area.
  *
- * @package EverBox
+ * @package mofinn
  */
 ?>
 <div id="secondary" class="right-column">
@@ -25,7 +25,7 @@
 			) );
 		?>
 		
-		<?php if(get_theme_mod( 'everbox_credit', 1 )) : ?>
+		<?php if(get_theme_mod( 'mofinn_credit', 1 )) : ?>
 			<div class="site-info">
 			<?php  
 				printf('Powered by WordPress. Theme by <a href="%1$s" target="_blank">Molunerfinn</a>', esc_url( 'http://www.molunerfinn.com' ));

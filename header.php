@@ -4,7 +4,7 @@
  *
  * Displays all of the <head> section and everything up till <div id="content">
  *
- * @package EverBox
+ * @package mofinn
  */
 ?><!DOCTYPE HTML>
 <html <?php language_attributes(); ?>>
@@ -21,7 +21,7 @@
 				<div class="group">
 					<div class="left-column">
 						<div class="site-heading">
-							<?php everbox_site_heading(); ?>
+							<?php mofinn_site_heading(); ?>
 						</div>
 						<!-- END .site-heading -->
 						<nav id="site-navigation" class="main-navigation" role="navigation">
@@ -32,7 +32,7 @@
 									'theme_location' => 'primary',
 									'container' => 'false',
 									'menu_class' => 'main-nav',
-									'fallback_cb' => 'everbox_nav_cb'
+									'fallback_cb' => 'mofinn_nav_cb'
 								) );
 							?>
 							</div>
@@ -68,7 +68,7 @@
 			<!-- END .mobile-menu-container -->
 			<div class="mobile-search-container">
 				<form role="search" method="get" id="searchform" class="searchform" action="<?php echo esc_url(home_url('/')); ?>">
-					<input type="search" value="" name="s" id="s" placeholder="<?php esc_attr(_e('Search..', 'everbox')); ?>">
+					<input type="search" value="" name="s" id="s" placeholder="<?php esc_attr(_e('Search..', 'mofinn')); ?>">
 				</form>
 			</div>
 			<!-- END .mobile-search-container -->

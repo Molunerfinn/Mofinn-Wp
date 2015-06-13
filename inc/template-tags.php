@@ -4,14 +4,14 @@
  *
  * Eventually, some of the functionality here could be replaced by core features.
  *
- * @package EverBox
+ * @package mofinn
  */
 
 /**
  * Display navigation to next/previous post when applicable.
  *
  */
-function everbox_post_navigation() {
+function mofinn_post_navigation() {
 	// Don't print empty markup if there's nowhere to navigate.
 	$previous = ( is_attachment() ) ? get_post( get_post()->post_parent ) : get_adjacent_post( false, '', true );
 	$next     = get_adjacent_post( false, '', false );
@@ -21,7 +21,7 @@ function everbox_post_navigation() {
 	}
 	?>
 	<nav class="navigation post-navigation" role="navigation">
-		<h2 class="screen-reader-text"><?php _e( 'Post navigation', 'everbox' ); ?></h2>
+		<h2 class="screen-reader-text"><?php _e( 'Post navigation', 'mofinn' ); ?></h2>
 		<div class="nav-links">
 			<?php
 				previous_post_link( '<div class="nav-previous">&laquo;&laquo;%link</div>', '%title' );
@@ -35,9 +35,9 @@ function everbox_post_navigation() {
 /**
  * Prints HTML with meta information for current post categories.
  */
-function everbox_post_category() {
+function mofinn_post_category() {
 	
-	if( ! get_theme_mod( 'everbox_category_link', 0 ) ) {
+	if( ! get_theme_mod( 'mofinn_category_link', 0 ) ) {
 		return;
 	}
 
@@ -46,7 +46,7 @@ function everbox_post_category() {
 	$output = '';
 	if( $categories ) {
 		foreach($categories as $category) {
-			$output .= '<a href="'.esc_url(get_category_link( $category->term_id )).'" title="' . esc_attr( sprintf( __( "View all posts in %s", 'everbox' ), $category->name ) ) . '">'.esc_html($category->cat_name).'</a>'.$separator;
+			$output .= '<a href="'.esc_url(get_category_link( $category->term_id )).'" title="' . esc_attr( sprintf( __( "View all posts in %s", 'mofinn' ), $category->name ) ) . '">'.esc_html($category->cat_name).'</a>'.$separator;
 		}
 ?>
 		<div class="post-meta category-links">
@@ -60,9 +60,9 @@ function everbox_post_category() {
 /**
  * Prints site heading
  */
-function everbox_site_heading() {
+function mofinn_site_heading() {
 
-	$logo = get_theme_mod('everbox_logo', '' );
+	$logo = get_theme_mod('mofinn_logo', '' );
 	if(!empty($logo)) {
 	?>
 		<a href="<?php echo esc_url(home_url('/')); ?>" class="logo-link" rel="home">
@@ -77,7 +77,7 @@ function everbox_site_heading() {
 /**
  * Prints HTML with meta information for current post-date, author and comments.
  */
-function everbox_post_meta() {
+function mofinn_post_meta() {
 ?>
 <div class="post-meta">
 	<span class="vcard author">
@@ -91,9 +91,9 @@ function everbox_post_meta() {
 	<?php if( ! post_password_required() && ( comments_open() || get_comments_number() ) ) : ?>
 	<span class="divider">&bull;</span>
 	<?php if(is_home()) { ?>
-	<span class="comments-count"><?php comments_popup_link( __( 'No Comment', 'everbox' ), __( '1 Comment', 'everbox' ), __( '% Comments', 'everbox' ) ); ?></span>
+	<span class="comments-count"><?php comments_popup_link( __( 'No Comment', 'mofinn' ), __( '1 Comment', 'mofinn' ), __( '% Comments', 'mofinn' ) ); ?></span>
 	<?php } else { ?>
-	<span class="comments-count"><?php comments_popup_link( __( 'Leave a comment', 'everbox' ), __( '1 Comment', 'everbox' ), __( '% Comments', 'everbox' ) ); ?></span>
+	<span class="comments-count"><?php comments_popup_link( __( 'Leave a comment', 'mofinn' ), __( '1 Comment', 'mofinn' ), __( '% Comments', 'mofinn' ) ); ?></span>
 	<?php } ?>
 	<?php endif; ?>
 </div>
@@ -104,12 +104,12 @@ function everbox_post_meta() {
 /**
  * Prints HTML with meta information for current post tags.
  */
-function everbox_post_tags() {
+function mofinn_post_tags() {
 
 	/* translators: used between list items, there is a space after the comma */
 	$tags_list = get_the_tag_list( '', '' );
 	if ( $tags_list ) {
-		printf( '<span class="tags-links">' . __( 'Tagged: %1$s', 'everbox' ) . '</span>', $tags_list );
+		printf( '<span class="tags-links">' . __( 'Tagged: %1$s', 'mofinn' ) . '</span>', $tags_list );
 	}
 }
 
@@ -118,8 +118,8 @@ function everbox_post_tags() {
  *
  * @return bool
  */
-function everbox_categorized_blog() {
-	if ( false === ( $all_the_cool_cats = get_transient( 'everbox_categories' ) ) ) {
+function mofinn_categorized_blog() {
+	if ( false === ( $all_the_cool_cats = get_transient( 'mofinn_categories' ) ) ) {
 		// Create an array of all the categories that are attached to posts.
 		$all_the_cool_cats = get_categories( array(
 			'fields'     => 'ids',
@@ -132,14 +132,14 @@ function everbox_categorized_blog() {
 		// Count the number of categories that are attached to the posts.
 		$all_the_cool_cats = count( $all_the_cool_cats );
 
-		set_transient( 'everbox_categories', $all_the_cool_cats );
+		set_transient( 'mofinn_categories', $all_the_cool_cats );
 	}
 
 	if ( $all_the_cool_cats > 1 ) {
-		// This blog has more than 1 category so everbox_categorized_blog should return true.
+		// This blog has more than 1 category so mofinn_categorized_blog should return true.
 		return true;
 	} else {
-		// This blog has only 1 category so everbox_categorized_blog should return false.
+		// This blog has only 1 category so mofinn_categorized_blog should return false.
 		return false;
 	}
 }
@@ -147,17 +147,17 @@ function everbox_categorized_blog() {
 /**
  * Prints HTML for password protect post
  */
-function everbox_password_form() {
+function mofinn_password_form() {
     global $post;
     $label = 'pwbox-'.( empty( $post->ID ) ? rand() : $post->ID );
     $o = '<form action="' . esc_url( site_url( 'wp-login.php?action=postpass', 'login_post' ) ) . '" class="form-inline" rol="form" method="post">
-    ' . '<p>' . __( "This content is password protected. To view it please enter your password below:", 'everbox' ) . '</p>' .'
+    ' . '<p>' . __( "This content is password protected. To view it please enter your password below:", 'mofinn' ) . '</p>' .'
     	<div class="form-group">
-    		<input name="post_password" id="' . esc_attr( $label ) . '" type="password" size="20" maxlength="20" placeholder="'. esc_attr__( "Password:", 'everbox' ) .'" class="form-control" />
+    		<input name="post_password" id="' . esc_attr( $label ) . '" type="password" size="20" maxlength="20" placeholder="'. esc_attr__( "Password:", 'mofinn' ) .'" class="form-control" />
    		</div>
-		<div class="form-group"><button type="submit" class="btn btn-primary" name="Submit">'. __( 'Submit', 'everbox' ) .'</button></div>
+		<div class="form-group"><button type="submit" class="btn btn-primary" name="Submit">'. __( 'Submit', 'mofinn' ) .'</button></div>
     </form>
     ';
     return $o;
 }
-add_filter( 'the_password_form', 'everbox_password_form' );
+add_filter( 'the_password_form', 'mofinn_password_form' );

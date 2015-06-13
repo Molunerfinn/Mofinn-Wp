@@ -3,15 +3,15 @@
  * Jetpack Compatibility File
  * See: http://jetpack.me/
  *
- * @package EverBox
+ * @package mofinn
  */
 
 /**
  * Add theme support for Infinite Scroll.
  * See: http://jetpack.me/support/infinite-scroll/
  */
-function everbox_jetpack_setup() {
-	$infinite = get_theme_mod('everbox_infinite', 0 );
+function mofinn_jetpack_setup() {
+	$infinite = get_theme_mod('mofinn_infinite', 0 );
 	if( !$infinite ) {
 	    return;
 	}
@@ -21,4 +21,4 @@ function everbox_jetpack_setup() {
 		'type'		=> 'click'
 	) );
 }
-add_action( 'after_setup_theme', 'everbox_jetpack_setup' );
+add_action( 'after_setup_theme', 'mofinn_jetpack_setup' );

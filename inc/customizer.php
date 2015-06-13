@@ -1,133 +1,133 @@
 <?php
 /**
- * EverBox Theme Customizer
+ * mofinn Theme Customizer
  *
- * @package EverBox
+ * @package mofinn
  */
 /**
  * Add postMessage support for site title and description for the Theme Customizer.
  *
  * @param WP_Customize_Manager $wp_customize Theme Customizer object.
  */
-function everbox_customize_register( $wp_customize ) {
+function mofinn_customize_register( $wp_customize ) {
     $wp_customize->get_setting( 'blogname' )->transport         = 'postMessage';
     $wp_customize->get_setting( 'blogdescription' )->transport  = 'postMessage';
     
-    $wp_customize->add_section( 'everbox_general_section' , array(
-        'title' => __( 'General', 'everbox' )
+    $wp_customize->add_section( 'mofinn_general_section' , array(
+        'title' => __( 'General', 'mofinn' )
     ) );
 
     // Primary Color
-    $wp_customize->add_setting( 'everbox_primary_color',
+    $wp_customize->add_setting( 'mofinn_primary_color',
         array(
             'default' => '', //Default setting/value to save
             'type' => 'theme_mod', //Is this an 'option' or a 'theme_mod'?
             'capability' => 'edit_theme_options', //Optional. Special permissions for accessing this setting.
             'transport' => 'postMessage', //What triggers a refresh of the setting? 'refresh' or 'postMessage' (instant)?
-            'sanitize_callback' => 'everbox_sanitize_hex_color'
+            'sanitize_callback' => 'mofinn_sanitize_hex_color'
         ) 
     );
     $wp_customize->add_control( new WP_Customize_Color_Control( //Instantiate the color control class
         $wp_customize, //Pass the $wp_customize object (required)
-        'everbox_primary_color', //Set a unique ID for the control
+        'mofinn_primary_color', //Set a unique ID for the control
         array(
-            'label' => __( 'Primary Color', 'everbox' ), //Admin-visible name of the control
-            'section' => 'everbox_general_section', //ID of the section this control should render in (can be one of yours, or a WordPress default section)
-            'settings' => 'everbox_primary_color', //Which setting to load and manipulate (serialized is okay)
+            'label' => __( 'Primary Color', 'mofinn' ), //Admin-visible name of the control
+            'section' => 'mofinn_general_section', //ID of the section this control should render in (can be one of yours, or a WordPress default section)
+            'settings' => 'mofinn_primary_color', //Which setting to load and manipulate (serialized is okay)
         ) 
     ) );
 
     // Post excerpt length
-    $wp_customize->add_setting( 'everbox_excerpt_length',
+    $wp_customize->add_setting( 'mofinn_excerpt_length',
         array(
             'default' => 60, //Default setting/value to save
             'type' => 'theme_mod', //Is this an 'option' or a 'theme_mod'?
             'capability' => 'edit_theme_options', //Optional. Special permissions for accessing this setting.
             'transport' => 'postMessage', //What triggers a refresh of the setting? 'refresh' or 'postMessage' (instant)?
-            'sanitize_callback' => 'everbox_sanitize_integer'
+            'sanitize_callback' => 'mofinn_sanitize_integer'
         ) 
     );
     $wp_customize->add_control( new WP_Customize_Control( //Instantiate the color control class
         $wp_customize, //Pass the $wp_customize object (required)
-        'everbox_excerpt_length', //Set a unique ID for the control
+        'mofinn_excerpt_length', //Set a unique ID for the control
         array(
-            'label' => __( 'Post excerpt length', 'everbox' ), //Admin-visible name of the control
-            'section' => 'everbox_general_section', //ID of the section this control should render in (can be one of yours, or a WordPress default section)
-            'settings' => 'everbox_excerpt_length', //Which setting to load and manipulate (serialized is okay)
+            'label' => __( 'Post excerpt length', 'mofinn' ), //Admin-visible name of the control
+            'section' => 'mofinn_general_section', //ID of the section this control should render in (can be one of yours, or a WordPress default section)
+            'settings' => 'mofinn_excerpt_length', //Which setting to load and manipulate (serialized is okay)
             'type' => 'number'
         ) 
     ) );
 
     // Cagetory link
-    $wp_customize->add_setting( 'everbox_category_link',
+    $wp_customize->add_setting( 'mofinn_category_link',
         array(
             'default' => 1, //Default setting/value to save
             'type' => 'theme_mod', //Is this an 'option' or a 'theme_mod'?
             'capability' => 'edit_theme_options', //Optional. Special permissions for accessing this setting.
             'transport' => 'postMessage', //What triggers a refresh of the setting? 'refresh' or 'postMessage' (instant)?
-            'sanitize_callback' => 'everbox_sanitize_bool'
+            'sanitize_callback' => 'mofinn_sanitize_bool'
         ) 
     );
     $wp_customize->add_control( new WP_Customize_Control( //Instantiate the color control class
         $wp_customize, //Pass the $wp_customize object (required)
-        'everbox_category_link', //Set a unique ID for the control
+        'mofinn_category_link', //Set a unique ID for the control
         array(
-            'label' => __( 'Show cagetory link', 'everbox' ), //Admin-visible name of the control
-            'section' => 'everbox_general_section', //ID of the section this control should render in (can be one of yours, or a WordPress default section)
-            'settings' => 'everbox_category_link', //Which setting to load and manipulate (serialized is okay)
+            'label' => __( 'Show cagetory link', 'mofinn' ), //Admin-visible name of the control
+            'section' => 'mofinn_general_section', //ID of the section this control should render in (can be one of yours, or a WordPress default section)
+            'settings' => 'mofinn_category_link', //Which setting to load and manipulate (serialized is okay)
             'type' => 'checkbox'
         ) 
     ) );
 
     // Infinite loading
-    $wp_customize->add_setting( 'everbox_infinite',
+    $wp_customize->add_setting( 'mofinn_infinite',
         array(
             'default' => 0, //Default setting/value to save
             'type' => 'theme_mod', //Is this an 'option' or a 'theme_mod'?
             'capability' => 'edit_theme_options', //Optional. Special permissions for accessing this setting.
             'transport' => 'postMessage', //What triggers a refresh of the setting? 'refresh' or 'postMessage' (instant)?
-            'sanitize_callback' => 'everbox_sanitize_bool'
+            'sanitize_callback' => 'mofinn_sanitize_bool'
         ) 
     );
     $wp_customize->add_control( new WP_Customize_Control( //Instantiate the color control class
         $wp_customize, //Pass the $wp_customize object (required)
-        'everbox_infinite', //Set a unique ID for the control
+        'mofinn_infinite', //Set a unique ID for the control
         array(
-            'label' => __( 'Infinite Pagination with jetpack', 'everbox' ), //Admin-visible name of the control
-            'section' => 'everbox_general_section', //ID of the section this control should render in (can be one of yours, or a WordPress default section)
-            'settings' => 'everbox_infinite', //Which setting to load and manipulate (serialized is okay)
+            'label' => __( 'Infinite Pagination with jetpack', 'mofinn' ), //Admin-visible name of the control
+            'section' => 'mofinn_general_section', //ID of the section this control should render in (can be one of yours, or a WordPress default section)
+            'settings' => 'mofinn_infinite', //Which setting to load and manipulate (serialized is okay)
             'type' => 'checkbox'
         ) 
     ) );
 
     // Credit
-    $wp_customize->add_setting( 'everbox_credit',
+    $wp_customize->add_setting( 'mofinn_credit',
         array(
             'default' => 1, //Default setting/value to save
             'type' => 'theme_mod', //Is this an 'option' or a 'theme_mod'?
             'capability' => 'edit_theme_options', //Optional. Special permissions for accessing this setting.
             'transport' => 'postMessage', //What triggers a refresh of the setting? 'refresh' or 'postMessage' (instant)?
-            'sanitize_callback' => 'everbox_sanitize_bool'
+            'sanitize_callback' => 'mofinn_sanitize_bool'
         ) 
     );
     $wp_customize->add_control( new WP_Customize_Control( //Instantiate the color control class
         $wp_customize, //Pass the $wp_customize object (required)
-        'everbox_credit', //Set a unique ID for the control
+        'mofinn_credit', //Set a unique ID for the control
         array(
-            'label' => __( 'Footer Credit', 'everbox' ), //Admin-visible name of the control
-            'section' => 'everbox_general_section', //ID of the section this control should render in (can be one of yours, or a WordPress default section)
-            'settings' => 'everbox_credit', //Which setting to load and manipulate (serialized is okay)
+            'label' => __( 'Footer Credit', 'mofinn' ), //Admin-visible name of the control
+            'section' => 'mofinn_general_section', //ID of the section this control should render in (can be one of yours, or a WordPress default section)
+            'settings' => 'mofinn_credit', //Which setting to load and manipulate (serialized is okay)
             'type' => 'checkbox'
         ) 
     ) );
 
 
-   $wp_customize->add_section( 'everbox_icons_section' , array(
-        'title'      => __( 'ICONS', 'everbox' )
+   $wp_customize->add_section( 'mofinn_icons_section' , array(
+        'title'      => __( 'ICONS', 'mofinn' )
     ) );
 
     // LOGO
-    $wp_customize->add_setting( 'everbox_logo',
+    $wp_customize->add_setting( 'mofinn_logo',
         array(
             'default' => '', //Default setting/value to save
             'type' => 'theme_mod', //Is this an 'option' or a 'theme_mod'?
@@ -138,16 +138,16 @@ function everbox_customize_register( $wp_customize ) {
     );
     $wp_customize->add_control( new WP_Customize_Image_Control( //Instantiate the color control class
         $wp_customize, //Pass the $wp_customize object (required)
-        'everbox_logo', //Set a unique ID for the control
+        'mofinn_logo', //Set a unique ID for the control
         array(
-            'label' => __( 'LOGO', 'everbox' ), //Admin-visible name of the control
-            'section' => 'everbox_icons_section', //ID of the section this control should render in (can be one of yours, or a WordPress default section)
-            'settings' => 'everbox_logo', //Which setting to load and manipulate (serialized is okay)
+            'label' => __( 'LOGO', 'mofinn' ), //Admin-visible name of the control
+            'section' => 'mofinn_icons_section', //ID of the section this control should render in (can be one of yours, or a WordPress default section)
+            'settings' => 'mofinn_logo', //Which setting to load and manipulate (serialized is okay)
         ) 
     ) );
 
     // favicon
-    $wp_customize->add_setting( 'everbox_favicon',
+    $wp_customize->add_setting( 'mofinn_favicon',
         array(
             'default' => '', //Default setting/value to save
             'type' => 'theme_mod', //Is this an 'option' or a 'theme_mod'?
@@ -158,16 +158,16 @@ function everbox_customize_register( $wp_customize ) {
     );
     $wp_customize->add_control( new WP_Customize_Image_Control( //Instantiate the color control class
         $wp_customize, //Pass the $wp_customize object (required)
-        'everbox_favicon', //Set a unique ID for the control
+        'mofinn_favicon', //Set a unique ID for the control
         array(
-            'label' => __( 'Favicon', 'everbox' ), //Admin-visible name of the control
-            'section' => 'everbox_icons_section', //ID of the section this control should render in (can be one of yours, or a WordPress default section)
-            'settings' => 'everbox_favicon', //Which setting to load and manipulate (serialized is okay)
+            'label' => __( 'Favicon', 'mofinn' ), //Admin-visible name of the control
+            'section' => 'mofinn_icons_section', //ID of the section this control should render in (can be one of yours, or a WordPress default section)
+            'settings' => 'mofinn_favicon', //Which setting to load and manipulate (serialized is okay)
         ) 
     ) );
 
     // iPhone App icon
-    $wp_customize->add_setting( 'everbox_app',
+    $wp_customize->add_setting( 'mofinn_app',
         array(
             'default' => '', //Default setting/value to save
             'type' => 'theme_mod', //Is this an 'option' or a 'theme_mod'?
@@ -178,23 +178,23 @@ function everbox_customize_register( $wp_customize ) {
     );
     $wp_customize->add_control( new WP_Customize_Image_Control( //Instantiate the color control class
         $wp_customize, //Pass the $wp_customize object (required)
-        'everbox_app', //Set a unique ID for the control
+        'mofinn_app', //Set a unique ID for the control
         array(
-            'label' => __( 'iPhone Retina icon (sizes:120x120)', 'everbox' ), //Admin-visible name of the control
-            'section' => 'everbox_icons_section', //ID of the section this control should render in (can be one of yours, or a WordPress default section)
-            'settings' => 'everbox_app', //Which setting to load and manipulate (serialized is okay)
+            'label' => __( 'iPhone Retina icon (sizes:120x120)', 'mofinn' ), //Admin-visible name of the control
+            'section' => 'mofinn_icons_section', //ID of the section this control should render in (can be one of yours, or a WordPress default section)
+            'settings' => 'mofinn_app', //Which setting to load and manipulate (serialized is okay)
         ) 
     ) );
 }
-add_action( 'customize_register', 'everbox_customize_register' );
+add_action( 'customize_register', 'mofinn_customize_register' );
 
 /**
  * Binds JS handlers to make Theme Customizer preview reload changes asynchronously.
  */
-function everbox_customize_preview_js() {
-    wp_enqueue_script( 'everbox_customizer', get_template_directory_uri() . '/js/customizer.js', array( 'customize-preview' ), '20130508', true );
+function mofinn_customize_preview_js() {
+    wp_enqueue_script( 'mofinn_customizer', get_template_directory_uri() . '/js/customizer.js', array( 'customize-preview' ), '20130508', true );
 }
-add_action( 'customize_preview_init', 'everbox_customize_preview_js' );
+add_action( 'customize_preview_init', 'mofinn_customize_preview_js' );
 
 /**
  * Adjusting color
@@ -202,7 +202,7 @@ add_action( 'customize_preview_init', 'everbox_customize_preview_js' );
  * @param  [type] $steps adjust by step
  * @return [type]        hex color
  */
-function everbox_adjustBrightness($hex, $steps) {
+function mofinn_adjustBrightness($hex, $steps) {
     // Steps should be between -255 and 255. Negative = darker, positive = lighter
     $steps = max(-255, min(255, $steps));
 
@@ -225,14 +225,14 @@ function everbox_adjustBrightness($hex, $steps) {
     return $return;
 }
 
-function everbox_custom_head() {
+function mofinn_custom_head() {
 	
-    $primary_color = get_theme_mod( 'everbox_primary_color', '' );
-	$favicon_url   = get_theme_mod('everbox_favicon', '');
-	$iphone_icon   = get_theme_mod('everbox_app', '');
+    $primary_color = get_theme_mod( 'mofinn_primary_color', '' );
+	$favicon_url   = get_theme_mod('mofinn_favicon', '');
+	$iphone_icon   = get_theme_mod('mofinn_app', '');
 ?>
 	<!--[if lt IE 9]>
-    <script src="<?php echo EVERBOX_URL . '/js/' ?>html5shiv-printshiv.js"></script>
+    <script src="<?php echo mofinn_URL . '/js/' ?>html5shiv-printshiv.js"></script>
   	<![endif]-->
 	<!-- Set the viewport. -->
 	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
@@ -264,7 +264,7 @@ function everbox_custom_head() {
             background-color: <?php echo esc_textarea($primary_color) ?>; 
         }
         a:hover {
-            color: <?php echo everbox_adjustBrightness($primary_color, -25); ?>;
+            color: <?php echo mofinn_adjustBrightness($primary_color, -25); ?>;
         }
         .archive-header .archive-title, 
         .search-header .search-title {
@@ -310,7 +310,7 @@ function everbox_custom_head() {
             background: <?php echo esc_textarea($primary_color) ?>;
         }
         #wp-calendar tbody td:hover a {
-            background: <?php echo everbox_adjustBrightness($primary_color, 15); ?>;
+            background: <?php echo mofinn_adjustBrightness($primary_color, 15); ?>;
         }
         #wp-calendar caption {
             background: <?php echo esc_textarea($primary_color) ?>;
@@ -331,20 +331,20 @@ function everbox_custom_head() {
         }
         .site-header {
             background: <?php echo esc_textarea($primary_color) ?>;
-            border-bottom: 1px solid <?php echo everbox_adjustBrightness($primary_color, -15); ?>;
+            border-bottom: 1px solid <?php echo mofinn_adjustBrightness($primary_color, -15); ?>;
         }
         div.main-nav > ul ul.sub-menu, 
         div.main-nav > ul ul.children,
         ul.main-nav ul.sub-menu,
         ul.main-nav ul.children {
-            background: <?php echo everbox_adjustBrightness($primary_color, -15); ?>;
+            background: <?php echo mofinn_adjustBrightness($primary_color, -15); ?>;
         }
         .mobile-menu-container, 
         .mobile-search-container {
-            background: <?php echo everbox_adjustBrightness($primary_color, -20); ?>;
+            background: <?php echo mofinn_adjustBrightness($primary_color, -20); ?>;
         }
         .site-search-area .searchform #s {
-            border: 1px solid <?php echo everbox_adjustBrightness($primary_color, -20); ?>;
+            border: 1px solid <?php echo mofinn_adjustBrightness($primary_color, -20); ?>;
         }
         @media (device-width: 375px) and (height: 667px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2) {
             .site-header {
@@ -352,11 +352,11 @@ function everbox_custom_head() {
               background-image: none;
             }
             .mobile-menu-container, .mobile-search-container {
-              background: <?php echo everbox_adjustBrightness($primary_color, -15); ?>;
+              background: <?php echo mofinn_adjustBrightness($primary_color, -15); ?>;
             }
         }
     </style>
     <?php endif; ?>
 <?php
 }
-add_action('wp_head', 'everbox_custom_head');
+add_action('wp_head', 'mofinn_custom_head');
