@@ -1,6 +1,6 @@
 ##Mofinn修改自mofinn
 感谢moyu的贡献。我十分喜欢mofinn这个主题，所以我打算改进它。
-[mofinn演示地址](http://demo.20theme.com/mofinn-cn/ "http://demo.20theme.com/mofinn-cn/")
+[EverBox演示地址](http://demo.20theme.com/everbox-cn/ "http://demo.20theme.com/everbox-cn/")
 [Mofinn演示地址](http://molunerfinn.com "http://molunerfinn.com")
 
 -----
@@ -23,10 +23,10 @@
 
 ----------
 
-## Mofinn is changed from mofinn
-Thanks to moyu for his hard work.I like mofinn very much so I decide to develop it.
+## Mofinn is changed from EverBox
+Thanks to moyu for his hard work.I like EverBox very much so I decide to develop it.
 
-[mofinn DEMO](http://demo.20theme.com/mofinn-cn/ "http://demo.20theme.com/mofinn-cn/")
+[EverBox DEMO](http://demo.20theme.com/everbox-cn/ "http://demo.20theme.com/everbox-cn/")
 </br>
 [Mofinn DEMO](http://molunerfinn.com "http://molunerfinn.com")
 
@@ -50,7 +50,7 @@ Thanks to moyu for his hard work.I like mofinn very much so I decide to develop 
 
 </br>
 
-## mofinn
+## EverBox
 Contributors: moyu  
 Tags: black, green, gray, white, dark, light, two-columns, right-sidebar, fixed-layout, responsive-layout, custom-colors, custom-menu, featured-images, threaded-comments, translation-ready  
 Requires at least: 4.1  
@@ -58,11 +58,11 @@ Tested up to: 4.1
 Stable tag: 4.1  
 License: GPLv2 or later  
 License URI: http://www.gnu.org/licenses/gpl-2.0.html  
-Live Demo: http://demo.20theme.com/mofinn  
+Live Demo: http://demo.20theme.com/everbox  
   
 ## CopyRight/License
-mofinn WordPress Theme, Copyright 2015 moyu
-mofinn is Distributed under the terms of the GNU GPL
+EverBox WordPress Theme, Copyright 2015 moyu
+EverBox is Distributed under the terms of the GNU GPL
   
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -77,7 +77,7 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with this program. If not, see < http://www.gnu.org/licenses/ >
   
-**mofinn WordPress Theme bundles the following third-party resources:**  
+**EverBox WordPress Theme bundles the following third-party resources:**  
 VelocityJS.org (1.2.1)  
 (C) 2014 Julian Shapiro.  
 MIT @license: en.wikipedia.org/wiki/MIT_License  
@@ -102,26 +102,26 @@ Source: https://icomoon.io
 Source: http://www.fontawesome.io  
   
 ## Description
-mofinn is a finely crafted WordPress theme with clean layout. No matter which blog topic you are about to cover, you will find mofinn’s features a perfect fit. It’s fully responsive, retina ready and easy to customize. Every elements are responsive to give your readers best user experience throughout your blog. Not just about design, mofinn is compatible with the latest versions of all modern browsers – Chrome, Safari, FireFox, Opera, IE8 and above.
+EverBox is a finely crafted WordPress theme with clean layout. No matter which blog topic you are about to cover, you will find EverBox’s features a perfect fit. It’s fully responsive, retina ready and easy to customize. Every elements are responsive to give your readers best user experience throughout your blog. Not just about design, EverBox is compatible with the latest versions of all modern browsers – Chrome, Safari, FireFox, Opera, IE8 and above.
   
 ## Features
 **Mobile Web App**  
 In theme customizer panel page, you can set your own mobile web app icon and startup image, which make your site more like a native mobile app.
   
 **Responsive Design**  
-Designed for Mobile, Tablets, Laptop and Desktop Devices. With responsive design, mofinn will dynamically adjust to any devices viewport. Try it out on your mobile device!
+Designed for Mobile, Tablets, Laptop and Desktop Devices. With responsive design, EverBox will dynamically adjust to any devices viewport. Try it out on your mobile device!
   
 **Friendly Theme Settings**  
 You can easily customize the theme logo, favicon, site primary color in the theme customizer panel.
   
 **Unlimited Colors**  
-Choose any color you like and change the appearance of mofinn.
+Choose any color you like and change the appearance of EverBox.
   
 **Clean Code**  
-mofinn has been built with the latest submission requirements based on the WordPress Codex, everything is working as intended.
+EverBox has been built with the latest submission requirements based on the WordPress Codex, everything is working as intended.
   
 **Infinite Pagination**  
-mofinn supports infinite pagination feature of Jetpack.
+EverBox supports infinite pagination feature of Jetpack.
   
 **Translation Ready**  
 You can translate the Theme to your own language. The theme includes .pot file for easy translation.
