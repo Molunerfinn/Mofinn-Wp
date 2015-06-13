@@ -3,7 +3,13 @@
 [mofinn演示地址](http://demo.20theme.com/mofinn-cn/ "http://demo.20theme.com/mofinn-cn/")
 [Mofinn演示地址](http://molunerfinn.com "http://molunerfinn.com")
 
+-----
 ##Mofinn 更新日志
+#### 2015/06/13 - v1.0PROA4
+- Bug修复。该Bug会导致手机端浏览的时候导航菜单栏无法收起。另外现在手机端的导航菜单将不显示子菜单。
+- 修改了一个插件，将侧边栏的最新更新以及最热文章对调位置。
+- 一些文本修改。
+
 #### 2015/06/12 - v1.0PROA3
 - Bug修复。该Bug会导致内核版本在40以下的Chrome浏览器无法很好地显示导航栏3D特效。建议更新至最新版本。
 - 修改说明文件以及页脚文件。
@@ -26,9 +32,14 @@ Thanks to moyu for his hard work.I like mofinn very much so I decide to develop 
 
 ## Mofinn Changelog
 
+#### 2015/06/13 - v1.0PROA4
+- Bug fixed.The bug makes the navigation menu can't go back when you touch it on your mobile phone.By the way, the submenu will not display on your mobile from now.
+- Modify a widget，exchange the position of 'Lastest posts' and 'Popular posts'.
+- Modify some texts.
+
 #### 2015/06/12 - v1.0PROA3
 - Bug fixed.The bug makes the Chrome browser which the kernel version is under 40 can't display the 3D rotating effect on the header.You'd better update your browser to the latest version.
-- Alter the introduction and the footer.
+- Modify the description and the footer.
 
 #### 2015/06/11 - v1.0PROA2
 - Make the header more beautiful. Add 3D rotating effect on it.
