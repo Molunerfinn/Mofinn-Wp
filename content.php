@@ -16,7 +16,7 @@
 	<?php endif; ?>
 	<div class="left">
 		<?php mofinn_post_category(); ?>
-		<h2 class="post-title">
+		<h2 class="post-title tra">
 		<?php 
 			printf('<a href="%1$s" title="%2$s" rel="bookmark">%3$s</a>', 
 				esc_url( get_permalink() ), 

@@ -5,6 +5,9 @@
 
 -----
 ##Mofinn 更新日志
+#### 2015/06/16 - v1.0PROA5
+- 更新文章标题显示效果。鼠标接近文章列表的文章标题时能触发一个缓慢的滑动变色特效。
+
 #### 2015/06/13 - v1.0PROA4
 - Bug修复。该Bug会导致手机端浏览的时候导航菜单栏无法收起。另外现在手机端的导航菜单将不显示子菜单。
 - 修改了一个插件，将侧边栏的最新更新以及最热文章对调位置。
@@ -31,6 +34,8 @@ Thanks to moyu for his hard work.I like EverBox very much so I decide to develop
 [Mofinn DEMO](http://molunerfinn.com "http://molunerfinn.com")
 
 ## Mofinn Changelog
+#### 2015/06/16 - v1.0PROA5
+- Update a display effect on the title of posts.When the mouse approaches to the lists of title of the posts you can find a slowly-slide and color-change effect.
 
 #### 2015/06/13 - v1.0PROA4
 - Bug fixed.The bug makes the navigation menu can't go back when you touch it on your mobile phone.By the way, the submenu will not display on your mobile from now.

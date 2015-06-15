@@ -2,7 +2,7 @@
  * Theme Name: Mofinn
  * Description: Mofinn is changed from mofinn.It's friendly and simply.
  * Theme URI: http://www.molunerfinn.com
- * Version: 1.0 PRO-A4
+ * Version: 1.0 PRO-A5
  * Author: Molunerfinn
  * Author URI: http://www.molunerfinn.com
  * Tags: black, gray, white, dark, light, two-columns, right-sidebar, responsive-layout, custom-colors, custom-menu, featured-images, threaded-comments, translation-ready
@@ -17,6 +17,12 @@
 /* 1 - BOOTUP CSS FRAMEWORK */
 /* a css framework for WordPress theme.
 /*----------------------------------------------------------------------*/
+.tra{-webkit-transition:all .3s ease-out;
+  -moz-transition:all .3s ease-out;
+  -ms-transition:all .3s ease-out;
+  -o-transition:all .3s ease-out;
+  transition:all .3s ease-out}/*tra标签做平滑过渡效果-目前用于标题*/
+
 .border_radius {
   border-radius: 0;
 }
@@ -3651,13 +3657,22 @@ ul.mobile-menu a:hover {
   color: #373737;
   font-size: 22px;
   clear: none;
+  border-left:3px solid #3782E7;
+  padding:3px 0 0 10px; /*文章列表页面标题左侧竖线*/
 }
+.post-item :hover.post-title {
+  border-left: 10px solid #3782E7;
+}
+.post-item :hover.post-title a{
+  color: #3782E7;
+}
+/*标题浮动特效*/
 .post-item .post-title a {
   color: #373737;
   text-decoration: none;
 }
 .post-item .post-title a:hover {
-  color: #000;
+  color: #3782E7;
 }
 .post-item .post-excerpt {
   font-size: 13px;
@@ -3769,7 +3784,10 @@ ul.mobile-menu a:hover {
   border-bottom: 1px solid #e5e5e5;
 }
 
-.single-post .entry-title,
+.single-post .entry-title{
+  padding-left: 10px;
+  border-left: 3px solid #3782E7;
+  },/*文章页标题左侧蓝色竖线*/
 .single-page .entry-title {
   font-size: 3rem;
   line-height: 1.2;
