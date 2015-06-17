@@ -2,7 +2,7 @@
  * Theme Name: Mofinn
  * Description: Mofinn is changed from mofinn.It's friendly and simply.
  * Theme URI: http://www.molunerfinn.com
- * Version: 1.0 PRO-A5
+ * Version: 1.0 PRO-A6
  * Author: Molunerfinn
  * Author URI: http://www.molunerfinn.com
  * Tags: black, gray, white, dark, light, two-columns, right-sidebar, responsive-layout, custom-colors, custom-menu, featured-images, threaded-comments, translation-ready
@@ -4560,7 +4560,7 @@ object {
   text-decoration: none;
 }
 
-/* =Calendar
+/* =Calendar 日历
 ----------------------------------*/
 #wp-calendar {
   width: 100%;
@@ -4593,6 +4593,11 @@ object {
 #wp-calendar tbody td:hover {
   background: #f1f1f1;
   color: #333;
+  -webkit-transition-delay:0.15s;
+  -moz-transition-delay:0.15s;
+  -ms-transition-delay:0.15s;
+  -o-transition-delay:0.15s;
+  transition-delay:0.15s;
 }
 
 #wp-calendar tbody td a {
@@ -4611,7 +4616,7 @@ object {
 }
 
 #wp-calendar tfoot {
-  display: none;
+  background: #fdfdfd;
 }
 
 #wp-calendar tbody td.pad {
@@ -4627,13 +4632,26 @@ object {
 #wp-calendar caption {
   text-align: center;
   cursor: pointer;
-  font-size: 13px;
+  font-size: 15px;
   text-transform: uppercase;
   margin: 0;
   padding: 12px;
   outline: 0 none !important;
   background: #3782E7;
   color: #fff;
+  transition: background 0.2s ease;
+  -webkit-transition: background 0.2s ease;
+  -o-transition: background 0.2s ease;
+  -moz-transition: background 0.2s ease;
+  transition: color 0.5s ease;
+  -webkit-transition: color 0.5s ease;
+  -o-transition: color 0.5s ease;
+  -moz-transition: color 0.5s ease;
+}
+
+#wp-calendar caption:hover{
+  background: #f1f1f1;
+  color: #000000;
 }
 
 #wp-calendar tbody a {
@@ -4647,6 +4665,16 @@ object {
   padding: 7px 0;
   color: #a7a7a7;
 }
+#wp-calendar td#prev {                    /*上一个月的*/
+  text-align:left;
+  padding-top:5px;
+}
+
+#wp-calendar td#next {                    /*下一个月的*/
+  text-align:right;
+  padding-top:5px;
+}
+
 
 /* =Stream List Widget
 ––––––––––––––––––––––––––––––––––*/
