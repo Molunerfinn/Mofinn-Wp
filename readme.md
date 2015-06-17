@@ -5,6 +5,12 @@
 
 -----
 ##Mofinn 更新日志
+
+#### 2015/06/18 - v1.0PROA6
+- 日历的下方添加了查看上一个有文章更新的月份以及下一个有文章更新月份的按钮。并稍微改进了日历头部颜色的样式。
+- 增加了回复评论会发送E-mail通知评论者的功能。
+
+
 #### 2015/06/16 - v1.0PROA5
 - 更新文章标题显示效果。鼠标接近文章列表的文章标题时能触发一个缓慢的滑动变色特效。
 
@@ -34,6 +40,11 @@ Thanks to moyu for his hard work.I like EverBox very much so I decide to develop
 [Mofinn DEMO](http://molunerfinn.com "http://molunerfinn.com")
 
 ## Mofinn Changelog
+
+#### 2015/06/16 - v1.0PROA6
+- Add a button on the bottom of the calendar to check the last and the next month when the auther has written articles. By the way, I slightly change the color style of the calendar's head.
+- Add a function.If you reply your comments then the commenter will receive an e-mail notification and so do you.
+
 #### 2015/06/16 - v1.0PROA5
 - Update a display effect on the title of posts.When the mouse approaches to the lists of title of the posts you can find a slowly-slide and color-change effect.
 
