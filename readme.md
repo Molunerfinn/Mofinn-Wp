@@ -6,6 +6,9 @@
 -----
 ##Mofinn 更新日志
 
+#### 2015/06/20 - v1.0PROA7
+- 文章页加入百度分享代码。你可以在文章页的左侧看到它。
+
 #### 2015/06/18 - v1.0PROA6
 - 日历的下方添加了查看上一个有文章更新的月份以及下一个有文章更新月份的按钮。并稍微改进了日历头部颜色的样式。
 - 增加了回复评论会发送E-mail通知评论者的功能。
@@ -41,7 +44,10 @@ Thanks to moyu for his hard work.I like EverBox very much so I decide to develop
 
 ## Mofinn Changelog
 
-#### 2015/06/16 - v1.0PROA6
+#### 2015/06/20 - v1.0PROA7
+- Add the 'Baidu share' codes to the pages of article.
+
+#### 2015/06/18 - v1.0PROA6
 - Add a button on the bottom of the calendar to check the last and the next month when the auther has written articles. By the way, I slightly change the color style of the calendar's head.
 - Add a function.If you reply your comments then the commenter will receive an e-mail notification and so do you.
 
