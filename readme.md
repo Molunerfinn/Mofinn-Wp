@@ -1,5 +1,5 @@
 ##Mofinn修改自EverBox
-感谢moyu的贡献。我十分喜欢mofinn这个主题，所以我打算改进它。
+感谢moyu的贡献。我十分喜欢EverBox这个主题，所以我打算改进它。
 [EverBox演示地址](http://demo.20theme.com/everbox-cn/ "http://demo.20theme.com/everbox-cn/")
 [Mofinn演示地址](http://molunerfinn.com "http://molunerfinn.com")
 
