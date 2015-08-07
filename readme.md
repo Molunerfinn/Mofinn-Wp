@@ -6,6 +6,9 @@
 -----
 ##Mofinn 更新日志
 
+#### 2015/08/08 - v1.0PROA8
+- 加入首页
+
 #### 2015/06/20 - v1.0PROA7
 - 文章页加入百度分享代码。你可以在文章页的左侧看到它。
 
@@ -43,6 +46,9 @@ Thanks to moyu for his hard work.I like EverBox very much so I decide to develop
 [Mofinn DEMO](http://molunerfinn.com "http://molunerfinn.com")
 
 ## Mofinn Changelog
+
+#### 2015/08/08 - v1.0PROA8
+- Add the Home page(index.html and mofinn-style.)
 
 #### 2015/06/20 - v1.0PROA7
 - Add the 'Baidu share' codes to the pages of article.
