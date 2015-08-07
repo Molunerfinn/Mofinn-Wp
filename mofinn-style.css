@@ -1,0 +1,176 @@
+body{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	font-family: HelveticaNeue-Medium, 'Helvetica Neue Medium', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font: normal 100%;
+}
+
+h2,.btn{
+	font-size: 337.5%;
+	-webkit-animation: change-opacity 1.5s ease-in-out forwards;	/* Safari 和 Chrome */
+	   -moz-animation: change-opacity 1.5s ease-in-out forwards;	/* Firefox */
+		  -o-animation: change-opacity 1.5s ease-in-out forwards;	/* Opera */
+			 animation: change-opacity 1.5s ease-in-out forwards;
+}
+
+#img{
+	position: absolute;
+	/*top: 0;*/
+	/*left: 0;*/
+	/*right: 0;*/
+	/*bottom: 0;*/
+	background: url('http://7xjikt.com1.z0.glb.clouddn.com/bg.jpg') no-repeat fixed;
+	background-size: cover;
+	height: 100%;
+	width: 100%;
+	z-index: -1;
+}
+
+#img.blur{
+	-webkit-animation: blur 1.5s ease-in-out forwards;	/* Safari 和 Chrome */
+	   -moz-animation: blur 1.5s ease-in-out forwards;	/* Firefox */
+		  -o-animation: blur 1.5s ease-in-out forwards;	/* Opera */
+			 animation: blur 1.5s ease-in-out forwards;
+}
+
+
+.row.main{
+	z-index: 4;
+	width: 100%;
+	/*position: absolute;*/
+	margin-top: 25%;
+	margin-left: 0px;
+	left: 50%;
+	text-align: center;
+	color: #f8f8ff;
+}
+
+.row.enter{
+	margin-top: 50px;
+}
+
+.btn{
+    border-width: 2px;
+    background-color: rgba(0,0,0,.0);
+    font-weight: 400;
+    font-size: 200%;
+    opacity: 0.8;
+    padding: 8px 16px;
+
+}
+
+.btn-default{
+    color: #ffa500;
+    border-color: #ffa500;
+    -webkit-transition: color,border-color .3s; /* Safari 和 Chrome */
+ 	  -moz-transition: color,border-color .3s; /* Firefox 4 */
+ 		 -o-transition: color,border-color .3s; /* Opera */
+     		 	transition: color,border-color .3s;
+}
+
+.btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default.active, .open .dropdown-toggle.btn-default {
+    color: #f8f8ff;
+    border-color: #f8f8ff;
+    background-color: rgba(0,0,0,.0);
+}
+
+@keyframes change-opacity
+{
+0%   {opacity: 0;}
+25%  {opacity: 0.25;}
+50%  {opacity: 0.5;}
+100% {opacity: 1;}
+}
+
+@-moz-keyframes change-opacity /* Firefox */
+{
+0%   {opacity: 0;}
+25%  {opacity: 0.25;}
+50%  {opacity: 0.5;}
+100% {opacity: 1;}
+}
+
+@-webkit-keyframes change-opacity /* Safari 和 Chrome */
+{
+0%   {opacity: 0;}
+25%  {opacity: 0.25;}
+50%  {opacity: 0.5;}
+100% {opacity: 1;}
+}
+
+@-o-keyframes change-opacity /* Opera */
+{
+0%   {opacity: 0;}
+25%  {opacity: 0.25;}
+50%  {opacity: 0.5;}
+100% {opacity: 1;}
+}
+
+@keyframes blur
+{
+0%   {filter: blur(0px);}
+25%  {filter: blur(2.5px);}
+50%  {filter: blur(5.0px);}
+100% {filter: blur(10px);}
+}
+
+@-moz-keyframes blur /* Firefox */
+{
+0%   {-moz-filter: blur(0px);}
+25%  {-moz-filter: blur(2.5px);}
+50%  {-moz-filter: blur(5.0px);}
+100% {-moz-filter: blur(10px);}
+}
+
+@-webkit-keyframes blur /* Safari 和 Chrome */
+{
+0%   {-webkit-filter: blur(0px);}
+25%  {-webkit-filter: blur(2.5px);}
+50%  {-webkit-filter: blur(5.0px);}
+100% {-webkit-filter: blur(10px);}
+}
+
+@-o-keyframes blur /* Opera */
+{
+0%   {-o-filter: blur(0px);}
+25%  {-o-filter: blur(2.5px);}
+50%  {-o-filter: blur(5.0px);}
+100% {-o-filter: blur(10px);}
+}
+
+
+@media (min-width: 300px){
+h2{
+	font-size: 200%;
+}
+.btn{
+	font-size: 100%;
+}
+}
+
+@media (min-width: 768px){
+h2{
+	font-size: 337.5%;
+}
+.btn{
+	font-size: 200%;
+}
+}
+
+@media (min-width: 992px){
+h2{
+	font-size: 337.5%;
+}
+.btn{
+	font-size: 200%;
+}
+}
+@media (min-width: 1200px){
+h2{
+	font-size: 337.5%;
+}
+.btn{
+	font-size: 200%;
+}
+}
